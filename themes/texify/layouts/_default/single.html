@@ -15,7 +15,7 @@
   <div class="warning">{{ printf .Site.Params.outdated.warning $days | safeHTML }}</div>
   {{ end }}
   {{ end }}
-  <h1>{{ .PublishDate.Format .Site.Params.dateFormat }}</h1>
+  <h2>{{ .PublishDate.Format .Site.Params.dateFormat }}</h2>
   {{ if ne .Params.tags nil }}
   <div>
     <b>Keywords: </b>
