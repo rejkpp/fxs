@@ -4,11 +4,11 @@
 
 {{ define "main" }}
 <main id="main" class="index">
-  <h1 class="center">oeps... deze pagina bestaat niet 🙃</h1>
-  <br>
   <span id="cta404">
+    <h1>oeps... deze pagina bestaat niet 🙃</h1>
+  <br>
     <h2 >
-      voor vragen kun je terecht 
+      voor vragen kun je terecht
       <br>
       bij ramiro via
       <br>
@@ -16,10 +16,10 @@
       <br>
       +597 75 23 23 6
     </h2>
+    <br>
+    <br>
+    <br>
   </span>
-  <br>
-  <br>
-  <br>
   {{ $paginator := .Paginate (where .Site.RegularPages "Type" "==" "rates") }}
   {{ range last 1 $paginator.Pages }}
     <h2 class="center">

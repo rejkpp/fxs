@@ -9,4 +9,10 @@
 
 #cta404{
   text-align: center;
+  line-height: 1.5;
+  margin: 0.5rem;
+}
+
+#cta404 h1, h2 {
+  font-weight: normal;
 }
