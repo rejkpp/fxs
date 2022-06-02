@@ -37,11 +37,11 @@
   {{ end }}
   <article class="content center">
     {{ .Content }}
-    {{ if eq $days .Site.Params.outdated.limit }}
+    <!-- {{ if eq $days .Site.Params.outdated.limit }} -->
       <h6>
         x̅ = gemiddelde koers
       </h6>
-    {{ end}}
+    <!-- {{ end}} -->
   </article>
   <div class="paginator">
     {{ if .NextInSection }}
