@@ -66,6 +66,10 @@
   <button class="warning" onclick="window.location.href='https://forexsu.co';">
     {{ printf .Site.Params.outdated.warning $days | safeHTML }}
   </button>
+  {{ else if eq $days .Site.Params.outdated.limit }}
+  <button class="warning" onclick="window.location.href='https://forexsu.co';">
+    {{ printf .Site.Params.outdated.uptodate $days | safeHTML }}
+  </button>
   {{ end }}
   {{ end }}
   <div class="comment">
