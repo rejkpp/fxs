@@ -67,7 +67,7 @@ since = "2022"            # website created year
 toc = false               # whether to enable table of contents in posts
 
 # add own param option
-[params.ramiro]
+[params.own]
 fullTitle = "foreign exchange suriname"
 
 # https://giscus.app
