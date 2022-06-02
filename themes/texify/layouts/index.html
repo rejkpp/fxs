@@ -6,11 +6,11 @@
 <main id="main" class="index">
   {{ $paginator := .Paginate (where .Site.RegularPages "Type" "==" "koers") }}
   {{ range $paginator.Pages }}
+  {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
     <h2>
       <a href="{{ .Permalink }}">
         {{ .PublishDate.Format .Site.Params.dateFormat }}
         {{ if cond (ne .Params.outdated nil) .Params.outdated .Site.Params.outdated.enable }}
-        {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
         {{ if gt $days .Site.Params.outdated.limit }}
         <span>⚠️</span>
         {{ end }}
