@@ -35,11 +35,7 @@
   {{ end }}
   {{ end }}
   <article class="content center">
-    {{ if .Site.Params.emphasisWithDots }}
-    {{ .Content | replaceRE "<strong>(\\p{Han}+?)</strong>" "<strong class=chinese>$1</strong>" | safeHTML }}
-    {{ else }}
     {{ .Content }}
-    {{ end }}
   </article>
   <div class="paginator">
     {{ if .PrevInSection }}
