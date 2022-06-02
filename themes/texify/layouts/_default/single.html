@@ -9,9 +9,9 @@
     {{ .Content }}
   </article>
   {{ else }}
+  {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
   <h2>{{ .PublishDate.Format .Site.Params.dateFormat }}
     {{ if cond (ne .Params.outdated nil) .Params.outdated .Site.Params.outdated.enable }}
-    {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
     {{ if gt $days .Site.Params.outdated.limit }}
     <span>⚠️</span>
     {{ end }}
@@ -37,6 +37,11 @@
   {{ end }}
   <article class="content center">
     {{ .Content }}
+    {{ if eq $days .Site.Params.outdated.limit }}
+      <h6>
+        x̅ = gemiddelde koers
+      </h6>
+    {{ end}}
   </article>
   <div class="paginator">
     {{ if .NextInSection }}
@@ -51,7 +56,6 @@
     {{ end }}
   </div>
   {{ if cond (ne .Params.outdated nil) .Params.outdated .Site.Params.outdated.enable }}
-  {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
   {{ if eq $days .Site.Params.outdated.yesterday }}
   <button class="warning" onclick="window.location.href='https://forexsu.co';">
     {{ printf .Site.Params.outdated.warningYesterday | safeHTML }}
