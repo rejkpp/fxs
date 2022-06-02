@@ -4,7 +4,7 @@
 
 {{ define "main" }}
 <main id="main" class="post">
-  {{ if ne .Section "post"}}
+  {{ if ne .Section "rates"}}
   <article class="content center">
     {{ .Content }}
   </article>
@@ -15,7 +15,7 @@
   <div class="warning">{{ printf .Site.Params.outdated.warning $days | safeHTML }}</div>
   {{ end }}
   {{ end }}
-  <h1>{{ .Title }}</h1>
+  <h1>{{ .PublishDate.Format .Site.Params.dateFormat }}</h1>
   {{ if ne .Params.tags nil }}
   <div>
     <b>Keywords: </b>
