@@ -1,0 +1,41 @@
+{{ define "head" }}
+<link rel="stylesheet" href='{{ "css/index.css" | absURL }}'>
+{{ end }}
+
+{{ define "main" }}
+<main id="main" class="index">
+  <h1>oeps... deze pagina bestaat niet 🙃</h1>
+  <h1>voor vragen kun je terecht bij ramiro via whatsapp +597 75 23 23 6</h1>
+  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "==" "rates") }}
+  {{ range $paginator.Pages }}
+    <h2 class="center">
+      <a href="{{ .Permalink }}">{{ .PublishDate.Format .Site.Params.dateFormat }}</a>
+    </h2>
+    {{ if ne .Params.tags nil }}
+    <div>
+      <b>Keywords: </b>
+      {{ range .Params.tags }}
+      <a class="link" href='{{ "tags" | absURL }}/{{ . | urlize }}'>#{{ . }}</a>
+      {{ end }}
+    </div>
+    {{ end }}
+    <article class="content center">
+      {{ .Content }}
+    </article>
+  {{ end }}
+  {{ if or $paginator.HasPrev $paginator.HasNext}}
+  <div class="paginator">
+    {{ if $paginator.HasPrev }}
+    <a class="link" href="{{ $paginator.Prev.URL }}">← prev</a>
+    {{ else }}
+    <a></a>
+    {{ end }}
+    {{ if $paginator.HasNext }}
+    <a class="link" href="{{ $paginator.Next.URL }}">next →</a>
+    {{ else }}
+    <a></a>
+    {{ end }}
+  </div>
+  {{ end }}
+</main>
+{{ end }}
