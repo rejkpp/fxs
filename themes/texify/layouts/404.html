@@ -21,7 +21,7 @@
     <br>
   </span>
   {{ $paginator := .Paginate (where .Site.RegularPages "Type" "==" "rates") }}
-  {{ range last 1 $paginator.Pages }}
+  {{ range first 1 $paginator.Pages }}
     <h2 class="center">
       <a href="{{ .Permalink }}">{{ .PublishDate.Format .Site.Params.dateFormat }}</a>
     </h2>
