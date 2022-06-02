@@ -24,12 +24,12 @@
   <div class="paginator">
     {{ if or $paginator.HasPrev $paginator.HasNext}}
       {{ if $paginator.HasPrev }}
-      <a class="link" href="{{ $paginator.Prev.URL }}">← prev</a>
+      <a class="link" href="{{ $paginator.Prev.URL }}"><</a>
       {{ else }}
       <a></a>
       {{ end }}
       {{ if $paginator.HasNext }}
-      <a class="link" href="{{ $paginator.Next.URL }}">next →</a>
+      <a class="link" href="{{ $paginator.Next.URL }}">></a>
       {{ else }}
       <a></a>
       {{ end }}
