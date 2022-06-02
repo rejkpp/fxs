@@ -4,7 +4,7 @@
 
 {{ define "main" }}
 <main id="main" class="index">
-  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "==" "rates") }}
+  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "==" "koers") }}
   {{ range $paginator.Pages }}
     <h2>
       <a href="{{ .Permalink }}">{{ .PublishDate.Format .Site.Params.dateFormat }}</a>

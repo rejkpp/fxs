@@ -20,7 +20,7 @@
     <br>
     <br>
   </span>
-  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "==" "rates") }}
+  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "==" "koers") }}
   {{ range first 1 $paginator.Pages }}
     <h2 class="center">
       <a href="{{ .Permalink }}">{{ .PublishDate.Format .Site.Params.dateFormat }}</a>
