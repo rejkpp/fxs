@@ -9,6 +9,12 @@
     <h2>
       <a href="{{ .Permalink }}">{{ .PublishDate.Format .Site.Params.dateFormat }}</a>
     </h2>
+    {{ if cond (ne .Params.outdated nil) .Params.outdated .Site.Params.outdated.enable }}
+    {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
+    {{ if gt $days .Site.Params.outdated.limit }}
+      ⚠️
+    {{ end }}
+    {{ end }}
     {{ if ne .Params.tags nil }}
     <div>
       <b>Keywords: </b>
