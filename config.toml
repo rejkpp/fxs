@@ -31,19 +31,14 @@ style = "emacs" # syntax highlight style, see https://xyproto.github.io/splash/d
 # https://gohugo.io/content-management/menus/
 [[menu.main]] # sections in the website header
 identifier = "post" # section id
-name = "Post"       # section display title
-url = "/"           # path to the section
+name = "post"       # section display title
+url = "/post/"           # path to the section
 weight = 1          # order of sections
 [[menu.main]]
-identifier = "archives"
-name = "Archives"
-url = "/post/"
-weight = 2
-[[menu.main]]
 identifier = "about"
-name = "About"
+name = "about"
 url = "/about/"
-weight = 3
+weight = 2
 
 # https://gohugo.io/content-management/taxonomies#configure-taxonomies
 [taxonomies]
