@@ -34,7 +34,7 @@
   </details>
   {{ end }}
   {{ end }}
-  <article class="content">
+  <article class="content center">
     {{ if .Site.Params.emphasisWithDots }}
     {{ .Content | replaceRE "<strong>(\\p{Han}+?)</strong>" "<strong class=chinese>$1</strong>" | safeHTML }}
     {{ else }}
