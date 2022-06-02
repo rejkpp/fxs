@@ -15,7 +15,7 @@
     {{ if gt $days .Site.Params.outdated.limit }}
     <span>⚠️</span>
     {{ else if eq $days .Site.Params.outdated.limit}}
-    <span>🟢</span>
+    <span>✅</span>
     {{ end }}
     {{ end }}
   </h2>
