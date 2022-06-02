@@ -4,15 +4,10 @@
 
 {{ define "main" }}
 <main id="main" class="index">
-  <article class="content center">
-    {{ .Content }}
-  </article>
   {{ $paginator := .Paginate (where .Site.RegularPages "Type" "==" "post") }}
   {{ range $paginator.Pages }}
-  <div class="post">
     <h2>
-      <a href="{{ .Permalink }}">{{ .PublishDate.Format .Site.Params.dateFormat }}</a>
-      <time>{{ .PublishDate.Format .Site.Params.dateFormat }}</time>
+      <a href="{{ .Permalink }}" class="center">{{ .PublishDate.Format .Site.Params.dateFormat }}</a>
     </h2>
     {{ if ne .Params.tags nil }}
     <div>
@@ -25,7 +20,6 @@
     <article class="content center">
       {{ .Content }}
     </article>
-  </div>
   {{ end }}
   {{ if or $paginator.HasPrev $paginator.HasNext}}
   <div class="paginator">
