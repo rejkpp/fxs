@@ -28,7 +28,7 @@
     <article class="content center">
       {{ .Content }}
     </article>
-    {{ if eq 1 $paginator.Page }}
+    {{ if eq $days .Site.Params.outdated.limit }}
       <span>
         x̅ = gemiddelde koers
       </span>
