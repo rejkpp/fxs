@@ -9,13 +9,14 @@
     {{ .Content }}
   </article>
   {{ else }}
-  <h2>{{ .PublishDate.Format .Site.Params.dateFormat }}</h2>
-  {{ if cond (ne .Params.outdated nil) .Params.outdated .Site.Params.outdated.enable }}
-  {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
-  {{ if gt $days .Site.Params.outdated.limit }}
-    ⚠️
-  {{ end }}
-  {{ end }}
+  <h2>{{ .PublishDate.Format .Site.Params.dateFormat }}
+    {{ if cond (ne .Params.outdated nil) .Params.outdated .Site.Params.outdated.enable }}
+    {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
+    {{ if gt $days .Site.Params.outdated.limit }}
+    <span>⚠️</span>
+    {{ end }}
+    {{ end }}
+  </h2>
   {{ if ne .Params.tags nil }}
   <div>
     <b>Keywords: </b>
