@@ -10,6 +10,7 @@ enableRobotsTXT = true             # /robots.txt
 enableEmoji = true                 # enable emoji
 googleAnalytics = ""               # google analytics id
 hasCJKLanguage = true              # Chinese/Japanese/Korean
+defaultContentLanguage = "nl"      # content language
 languageCode = "nl"                # content language
 paginate = 5                       # number of posts each page
 rssLimit = 10                      # maximum items in rss feeds
