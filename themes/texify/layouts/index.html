@@ -28,6 +28,11 @@
     <article class="content center">
       {{ .Content }}
     </article>
+    {{ if eq 1 $paginator.Page }}
+      <span>
+        x̅ = gemiddelde koers
+      </span>
+    {{ end}}
   {{ end }}
   {{ if or $paginator.HasPrev $paginator.HasNext}}
     <div class="paginator">
