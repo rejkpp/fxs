@@ -16,8 +16,8 @@ theme = "texify"        # theme directory name
 title = "foreign exchange suriname"                   # website title
 
 [author]
-email = "" # your email
-name = ""          # your name
+email = "hello@forexsu.co" # your email
+name = "forexsu"          # your name
 
 # https://gohugo.io/getting-started/configuration-markup
 [markup]
