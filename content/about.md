@@ -10,7 +10,7 @@ author = "Authors"
 ## deze website is gratis.🤗
 ## voor premium service⁺,
 ## neem contact op met ramiro.
-## +597 75 23 23 6
 ## [whatsapp]
-
+## +597 75 23 23 6
+##
 ##### ⁺premium service is bijvoorbeeld koersen (of andere financiële data) per email of whatsapp dagelijks ontvangen.
