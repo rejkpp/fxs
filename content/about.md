@@ -13,4 +13,4 @@ author = "Authors"
 ## +597 75 23 23 6
 ## [whatsapp]
 ## ———
-##### ⁺premium service is bijvoorbeeld koersen (of andere financiële data) dagelijks per email of whatsapp ontvangen. we hebben zelfs een telegram bot 👀.
+##### ⁺premium service is bijvoorbeeld koersen (of andere financiële data) dagelijks per email of whatsapp ontvangen. we hebben zelfs een telegram bot.🤖
