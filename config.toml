@@ -42,7 +42,7 @@ weight = 1          # order of sections
 # weight = 2
 
 # https://gohugo.io/content-management/taxonomies#configure-taxonomies
-# [taxonomies]
+[taxonomies]
 # series = "series" # see https://gohugo.io/templates/internal/#open-graph
 # tags = "tags"
 
