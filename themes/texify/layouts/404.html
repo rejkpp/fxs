@@ -4,10 +4,12 @@
 
 {{ define "main" }}
 <main id="main" class="index">
-  <h1>oeps... deze pagina bestaat niet 🙃</h1>
+  <h1 class="center">oeps... deze pagina bestaat niet 🙃</h1>
   <h1>voor vragen kun je terecht bij ramiro via whatsapp +597 75 23 23 6</h1>
+  <br>
+  <br>
   {{ $paginator := .Paginate (where .Site.RegularPages "Type" "==" "rates") }}
-  {{ range $paginator.Pages }}
+  {{ range last 1 $paginator.Pages }}
     <h2 class="center">
       <a href="{{ .Permalink }}">{{ .PublishDate.Format .Site.Params.dateFormat }}</a>
     </h2>
