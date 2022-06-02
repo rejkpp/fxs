@@ -56,7 +56,7 @@ time {
     display: flex;
     flex-direction: column;
     font-family: 'Courier Prime Sans', Courier, monospace;
-    min-height: 100vh;
+    min-height: 95vh;
     overflow-wrap: break-word;
     padding: 1rem;
 }
