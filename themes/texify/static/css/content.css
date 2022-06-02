@@ -118,7 +118,6 @@
 .content table {
     display: block;
     overflow-x: auto;
-    padding-bottom: 2rem;
 }
 
 .content td, .content th {
