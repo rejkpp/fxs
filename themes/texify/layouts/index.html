@@ -6,8 +6,8 @@
 <main id="main" class="index">
   {{ $paginator := .Paginate (where .Site.RegularPages "Type" "==" "post") }}
   {{ range $paginator.Pages }}
-    <h2>
-      <a href="{{ .Permalink }}" class="center">{{ .PublishDate.Format .Site.Params.dateFormat }}</a>
+    <h2 class="center">
+      <a href="{{ .Permalink }}">{{ .PublishDate.Format .Site.Params.dateFormat }}</a>
     </h2>
     {{ if ne .Params.tags nil }}
     <div>
