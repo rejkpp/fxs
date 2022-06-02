@@ -56,11 +56,8 @@ tags = "tags"
 
 [params]
 description = "foreign exchange rates for suriname" # website description
-favicon = "" # path to website icon, relative to ./static
+# favicon = "" # path to website icon, relative to ./static
 footnote = """
-# Follow me on <a class=link href=https://github.com/queensferryme>GitHub</a>,
-# <a class=link href=https://twitter.com/queensferryme>Twitter</a> or
-# <a class=link href=/index.xml>RSS</a> |
 """ # notes in the website footer
 keywords = ["foreign exchange suriname", "suriname", "forex suriname", "forex su", "forexsu", "fxs", "forexsu.co", "foreignexchangesuriname.com"] # website keywords
 
