@@ -16,7 +16,6 @@ paginate = 5                       # number of posts each page
 rssLimit = 10                      # maximum items in rss feeds
 theme = "texify"        # theme directory name
 title = "forexsu.co"                   # website title
-title = "forexsu.co"                   # website title
 
 [author]
 email = "hello@forexsu.co" # your email
