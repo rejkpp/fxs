@@ -9,13 +9,13 @@
     {{ .Content }}
   </article>
   {{ else }}
+  <h2>{{ .PublishDate.Format .Site.Params.dateFormat }}</h2>
   {{ if cond (ne .Params.outdated nil) .Params.outdated .Site.Params.outdated.enable }}
   {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
   {{ if gt $days .Site.Params.outdated.limit }}
-  <div class="warning">{{ printf .Site.Params.outdated.warning $days | safeHTML }}</div>
+    ⚠️
   {{ end }}
   {{ end }}
-  <h2>{{ .PublishDate.Format .Site.Params.dateFormat }}</h2>
   {{ if ne .Params.tags nil }}
   <div>
     <b>Keywords: </b>
@@ -49,6 +49,12 @@
     <a></a>
     {{ end }}
   </div>
+  {{ if cond (ne .Params.outdated nil) .Params.outdated .Site.Params.outdated.enable }}
+  {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
+  {{ if gt $days .Site.Params.outdated.limit }}
+  <div class="warning">{{ printf .Site.Params.outdated.warning $days | safeHTML }}</div>
+  {{ end }}
+  {{ end }}
   <div class="comment">
     <!-- disqus -->
     {{ template "_internal/disqus.html" . }}
