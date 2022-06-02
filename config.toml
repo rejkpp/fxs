@@ -83,9 +83,9 @@ use = "katex"  # katex or mathjax
 
 [params.outdated]
 enable = true # whether to display warnings for outdated posts
-limit = 1   # days between last modified time and outdated time
+limit = 0   # days between last modified time and outdated time
 # warning to be displayed
-warning = "⚠️ deze koersen zijn van <i>%d</i> dagen geleden."
+warning = "⚠️ koersen van <i>%d</i> dagen geleden."
 
 # https://utteranc.es
 [params.utterances]
