@@ -1,6 +1,6 @@
 +++
-aliases = ["posts", "articles", "blog", "showcase", "docs"]
-title = "Posts"
-author = "Hugo Authors"
+aliases = ["posts", "articles", "blog", "showcase", "docs", "rates"]
+title = "rates"
+author = "forexsu.co"
 tags = ["index"]
 +++
