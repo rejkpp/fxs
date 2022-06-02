@@ -7,14 +7,16 @@
   {{ $paginator := .Paginate (where .Site.RegularPages "Type" "==" "koers") }}
   {{ range $paginator.Pages }}
     <h2>
-      <a href="{{ .Permalink }}">{{ .PublishDate.Format .Site.Params.dateFormat }}</a>
+      <a href="{{ .Permalink }}">
+        {{ .PublishDate.Format .Site.Params.dateFormat }}
+        {{ if cond (ne .Params.outdated nil) .Params.outdated .Site.Params.outdated.enable }}
+        {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
+        {{ if gt $days .Site.Params.outdated.limit }}
+        <span>⚠️</span>
+        {{ end }}
+        {{ end }}
+      </a>
     </h2>
-    {{ if cond (ne .Params.outdated nil) .Params.outdated .Site.Params.outdated.enable }}
-    {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
-    {{ if gt $days .Site.Params.outdated.limit }}
-    <span>⚠️</span>
-    {{ end }}
-    {{ end }}
     {{ if ne .Params.tags nil }}
     <div>
       <b>Keywords: </b>
