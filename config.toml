@@ -52,7 +52,7 @@ tags = "tags"
 ########################
 
 [params]
-description = "foreign exchange rates for suriname" # website description
+description = "actuele wisselkoers suriname" # website description
 favicon = "favicon.ico" # path to website icon, relative to ./static
 footnote = """
 """ # notes in the website footer
