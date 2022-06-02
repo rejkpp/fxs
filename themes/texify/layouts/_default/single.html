@@ -53,9 +53,13 @@
   {{ if cond (ne .Params.outdated nil) .Params.outdated .Site.Params.outdated.enable }}
   {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
   {{ if eq $days .Site.Params.outdated.yesterday }}
-  <div class="warning">{{ printf .Site.Params.outdated.warningYesterday | safeHTML }}</div>
+  <button class="warning" onclick="window.location.href='https://forexsu.co';">
+    {{ printf .Site.Params.outdated.warningYesterday | safeHTML }}
+  </button>
   {{ else if gt $days .Site.Params.outdated.limit }}
-  <div class="warning">{{ printf .Site.Params.outdated.warning $days | safeHTML }}</div>
+  <button class="warning" onclick="window.location.href='https://forexsu.co';">
+    {{ printf .Site.Params.outdated.warning $days | safeHTML }}
+  </button>
   {{ end }}
   {{ end }}
   <div class="comment">
