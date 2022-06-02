@@ -86,8 +86,8 @@ enable = true # whether to display warnings for outdated posts
 limit = 0   # days between last modified time and outdated time
 yesterday = 1   # days between last modified time and outdated time
 # warning to be displayed
-warning = "⚠️ koersen van <i>%d</i> dagen geleden."
-warningYesterday = "⚠️ koersen van gister."
+warning = "<i>⚠️ koersen van %d dagen geleden.</i>"
+warningYesterday = "<i>⚠️ koersen van gister.</i>"
 
 # https://utteranc.es
 [params.utterances]
