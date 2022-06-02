@@ -56,7 +56,7 @@ tags = "tags"
 
 [params]
 description = "foreign exchange rates for suriname" # website description
-# favicon = "" # path to website icon, relative to ./static
+favicon = "favicon.ico" # path to website icon, relative to ./static
 footnote = """
 """ # notes in the website footer
 keywords = ["foreign exchange suriname", "suriname", "forex suriname", "forex su", "forexsu", "fxs", "forexsu.co", "foreignexchangesuriname.com"] # website keywords
