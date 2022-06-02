@@ -1,0 +1,58 @@
+{{ define "head" }}
+<link rel="stylesheet" href='{{ "css/index.css" | absURL }}'>
+{{ end }}
+
+{{ define "main" }}
+<main id="main" class="index">
+  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "==" "koers") }}
+  {{ range first $paginator.Pages }}
+    {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
+    <h2>{{ .PublishDate.Format .Site.Params.dateFormat }}
+      {{ if cond (ne .Params.outdated nil) .Params.outdated .Site.Params.outdated.enable }}
+      {{ if gt $days .Site.Params.outdated.limit }}
+      <span>⚠️</span>
+      {{ end }}
+      {{ end }}
+    </h2>
+    {{ if ne .Params.tags nil }}
+      <div>
+        <b>Keywords: </b>
+        {{ range .Params.tags }}
+        <a class="link" href='{{ "tags" | absURL }}/{{ . | urlize }}'>#{{ . }}</a>
+        {{ end }}
+      </div>
+    {{ end }}
+    <article class="content center">
+      {{ .Content }}
+      {{ if ge $days .Site.Params.outdated.limit }}
+        <h6>
+          x̅ = gemiddelde koers
+        </h6>
+      {{ end}}
+    </article>
+    <div class="paginator">
+      {{ if .NextInSection }}
+      <a class="link" href="{{ .NextInSection.Permalink }}"><</a>
+      {{ else }}
+      <a></a>
+      {{ end }}
+      {{ if .PrevInSection }}
+      <a class="link" href="{{ .PrevInSection.Permalink }}">></a>
+      {{ else }}
+      <a></a>
+      {{ end }}
+    </div>
+    {{ if cond (ne .Params.outdated nil) .Params.outdated .Site.Params.outdated.enable }}
+    {{ if eq $days .Site.Params.outdated.yesterday }}
+    <button class="warning" onclick="window.location.href='https://forexsu.co';">
+      {{ printf .Site.Params.outdated.warningYesterday | safeHTML }}
+    </button>
+    {{ else if gt $days .Site.Params.outdated.limit }}
+    <button class="warning" onclick="window.location.href='https://forexsu.co';">
+      {{ printf .Site.Params.outdated.warning $days | safeHTML }}
+    </button>
+    {{ end }}
+    {{ end }}
+  {{ end }}
+</main>
+{{ end }}
