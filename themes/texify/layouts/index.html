@@ -27,12 +27,12 @@
     {{ end }}
     <article class="content center">
       {{ .Content }}
+      {{ if eq $days .Site.Params.outdated.limit }}
+        <span>
+          x̅ = gemiddelde koers
+        </span>
+      {{ end}}
     </article>
-    {{ if eq $days .Site.Params.outdated.limit }}
-      <span>
-        x̅ = gemiddelde koers
-      </span>
-    {{ end}}
   {{ end }}
   {{ if or $paginator.HasPrev $paginator.HasNext}}
     <div class="paginator">
