@@ -39,12 +39,12 @@
   </article>
   <div class="paginator">
     {{ if .NextInSection }}
-    <a class="link" href="{{ .NextInSection.Permalink }}">></a>
+    <a class="link" href="{{ .NextInSection.Permalink }}"><</a>
     {{ else }}
     <a></a>
     {{ end }}
     {{ if .PrevInSection }}
-    <a class="link" href="{{ .PrevInSection.Permalink }}"><</a>
+    <a class="link" href="{{ .PrevInSection.Permalink }}">></a>
     {{ else }}
     <a></a>
     {{ end }}
