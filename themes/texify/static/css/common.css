@@ -2,6 +2,36 @@
 
 @font-face {
     font-display: swap;
+    font-family: 'Courier Prime Sans';
+    font-style: normal;
+    font-weight: bold;
+    src: url('../font/cps-bold.ttf');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Courier Prime Sans';
+    font-style: italic;
+    font-weight: bold;
+    src: url('../font/cps-bolditalic.ttf');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Courier Prime Sans';
+    font-style: italic;
+    font-weight: normal;
+    src: url('../font/cps-italic.ttf');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Courier Prime Sans';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../font/cps-normal.ttf');
+}@font-face {
+    font-display: swap;
     font-family: 'Latin Modern Mono';
     font-style: normal;
     font-weight: bold;
@@ -87,7 +117,7 @@ time {
     background-color: #FAFAFA;
     display: flex;
     flex-direction: column;
-    font-family: 'Latin Modern Roman', 'Times New Roman', serif;
+    font-family: 'Courier Prime Sans', Courier, monospace;
     min-height: 100vh;
     overflow-wrap: break-word;
     padding: 1rem;
