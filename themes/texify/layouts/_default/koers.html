@@ -7,16 +7,18 @@
   {{ $paginator := .Paginate (where .Site.RegularPages "Type" "==" "koers") }}
   {{ range $paginator.Pages }}
   {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
-    <h2>
+    <h4>
       <a href="{{ .Permalink }}">
         {{ .PublishDate.Format .Site.Params.dateFormat }}
         {{ if cond (ne .Params.outdated nil) .Params.outdated .Site.Params.outdated.enable }}
         {{ if gt $days .Site.Params.outdated.limit }}
         <span>⚠️</span>
+        {{ else if eq $days .Site.Params.outdated.limit}}
+        <span>✅</span>
         {{ end }}
         {{ end }}
       </a>
-    </h2>
+    </h4>
     {{ if ne .Params.tags nil }}
     <div>
       <b>Keywords: </b>
@@ -27,11 +29,6 @@
     {{ end }}
     <article class="content center">
       {{ .Content }}
-      {{ if eq $days .Site.Params.outdated.limit }}
-        <h6>
-          x̅ = gemiddelde koers
-        </h6>
-      {{ end}}
     </article>
   {{ end }}
   {{ if or $paginator.HasPrev $paginator.HasNext}}
