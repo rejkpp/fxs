@@ -61,6 +61,9 @@
   <button class="warning" onclick="parent.location='/';">
     {{ printf .Site.Params.outdated.warningYesterday | safeHTML }}
   </button>
+  <div class="warning">
+    {{ printf .Site.Params.outdated.warningYesterday | safeHTML }}
+  </div>
   {{ else if gt $days .Site.Params.outdated.limit }}
   <button class="warning" onclick="parent.location='/';">
     {{ printf .Site.Params.outdated.warning $days | safeHTML }}
