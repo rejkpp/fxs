@@ -5,7 +5,7 @@
 
 baseURL = "https://forexsu.co"     # website root path
 disqusShortname = ""               # disqus shortcode
-enableGitInfo = false              # retrieve last modified date from git commits
+enableGitInfo = true              # retrieve last modified date from git commits
 enableRobotsTXT = true             # /robots.txt
 enableEmoji = true                 # enable emoji
 googleAnalytics = ""               # google analytics id
@@ -17,6 +17,12 @@ rssLimit = 10                      # maximum items in rss feeds
 theme = "texify"        # theme directory name
 title = "forexsu.co"                   # website title
 timeZone = "America/Paramaribo"
+
+date = ['date', 'publishDate', 'lastmod']
+expiryDate = ['expiryDate']
+lastmod = [':git', 'lastmod', 'date', 'publishDate']
+publishDate = ['publishDate', 'date']
+
 
 [author]
 email = "hello@forexsu.co" # your email
