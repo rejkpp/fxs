@@ -32,10 +32,10 @@ style = "emacs" # syntax highlight style, see https://xyproto.github.io/splash/d
 
 # https://gohugo.io/content-management/menus/
 [[menu.main]]         # sections in the website header
-identifier = "koers"  # section id
-name = "koers"        # section display title
-url = "/"      # path to the section
-weight = 1          # order of sections
+# identifier = "koers"  # section id
+# name = "koers"        # section display title
+# url = "/"      # path to the section
+# weight = 1          # order of sections
 # [[menu.main]]
 # identifier = "about"
 # name = "about"
