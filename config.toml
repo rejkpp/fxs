@@ -92,11 +92,9 @@ use = "katex"  # katex or mathjax
 [params.outdated]
 enable = true # whether to display warnings for outdated posts
 limit = 0   # days between last modified time and outdated time
-yesterday = 1   # days between last modified time and outdated time
 # warning to be displayed
 uptodate = "✅ actuele koersen."
 warning = "⚠️ oude koersen."
-warningYesterday = "⚠️ koersen van gister."
 
 # https://utteranc.es
 [params.utterances]
