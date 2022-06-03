@@ -8,13 +8,13 @@
   {{ range first 1 $paginator.Pages }}
     {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
     <h4>laatst bijgewerkt op {{ .PublishDate.Format .Site.Params.timeFormat }}
-      <!-- {{ if cond (ne .Params.outdated nil) .Params.outdated .Site.Params.outdated.enable }}
+      {{ if cond (ne .Params.outdated nil) .Params.outdated .Site.Params.outdated.enable }}
       {{ if gt $days .Site.Params.outdated.limit }}
       <span>⚠️</span>
       {{ else if eq $days .Site.Params.outdated.limit}}
       <span>✅</span>
       {{ end }}
-      {{ end }} -->
+      {{ end }}
     </h4>
     {{ if ne .Params.tags nil }}
       <div>
