@@ -18,12 +18,6 @@ theme = "texify"        # theme directory name
 title = "forexsu.co"                   # website title
 timeZone = "America/Paramaribo"
 
-# date = ['date', 'publishDate', 'lastmod']
-# expiryDate = ['expiryDate']
-# lastmod = [':git', 'lastmod', 'date', 'publishDate']
-# publishDate = ['publishDate', 'date']
-
-
 [author]
 email = "hello@forexsu.co" # your email
 name = "forexsu"          # your name
@@ -93,8 +87,7 @@ use = "katex"  # katex or mathjax
 enable = true # whether to display warnings for outdated posts
 limit = 0   # days between last modified time and outdated time
 # warning to be displayed
-uptodate = "✅ actuele koersen."
-warning = "⚠️ oude koersen."
+warning = "⚠️ oude koersen %d dagen oud."
 
 # https://utteranc.es
 [params.utterances]
