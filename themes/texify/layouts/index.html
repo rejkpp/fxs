@@ -41,21 +41,6 @@
       <a></a>
       {{ end }}
     </div>
-    <!-- {{ if cond (ne .Params.outdated nil) .Params.outdated .Site.Params.outdated.enable }}
-    {{ if eq $days .Site.Params.outdated.limit }}
-    <button class="uptodate" onclick="parent.location='/';">
-      {{ printf .Site.Params.outdated.uptodate | safeHTML }}
-    </button>
-    {{ else if eq $days .Site.Params.outdated.yesterday }}
-    <button class="warning" onclick="parent.location='/';">
-      {{ printf .Site.Params.outdated.warningYesterday | safeHTML }}
-    </button>
-    {{ else if gt $days .Site.Params.outdated.limit }}
-    <button class="warning" onclick="parent.location='/';">
-      {{ printf .Site.Params.outdated.warning $days | safeHTML }}
-    </button>
-    {{ end }}
-    {{ end }} -->
   {{ end }}
 </main>
 {{ end }}
