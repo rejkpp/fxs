@@ -7,6 +7,7 @@
   {{ if ne .Section "koers"}}
   <article class="content center">
     {{ .Content }}
+    test for about
   </article>
   {{ else }}
   {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
