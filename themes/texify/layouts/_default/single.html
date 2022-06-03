@@ -13,9 +13,9 @@
   <h4>{{ .PublishDate.Format .Site.Params.dateFormat }}
     {{ if cond (ne .Params.outdated nil) .Params.outdated .Site.Params.outdated.enable }}
     {{ if gt $days .Site.Params.outdated.limit }}
-    <span>⚠️ oude koersen</span>
+    <p>⚠️ oude koersen</p>
     {{ else if eq $days .Site.Params.outdated.limit}}
-    <span>✅ actuele koersen</span>
+    <p>✅ actuele koersen</p>
     {{ end }}
     {{ end }}
   </h4>
