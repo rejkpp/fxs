@@ -18,8 +18,8 @@ theme = "texify"        # theme directory name
 title = "forexsu.co"                   # website title
 timeZone = "America/Paramaribo"
 
-date = ['date', 'publishDate', 'lastmod']
-expiryDate = ['expiryDate']
+# date = ['date', 'publishDate', 'lastmod']
+# expiryDate = ['expiryDate']
 # lastmod = [':git', 'lastmod', 'date', 'publishDate']
 # publishDate = ['publishDate', 'date']
 
