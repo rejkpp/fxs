@@ -138,7 +138,8 @@ time {
     align-items: center;
     display: flex;
     font-size: .9rem;
-    flex-direction: column;;
+    flex-direction: column;
+    text-align: center;
 }
 
 #footer > .footnote {
