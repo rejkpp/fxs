@@ -9,7 +9,9 @@
     {{ .Content }}
     test for about
     {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
-    {{ %$days }}
+    {{ $days }}
+    <br>
+    {{ printf %d $days | safeHTML }}
   </article>
   {{ else }}
   {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
