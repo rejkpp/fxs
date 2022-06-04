@@ -12,7 +12,7 @@
     {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
     {{ $days }}
     <br>
-    {{ printf %d $days | safeHTML }}
+    {{ printf "%d" $days | safeHTML }}
   </article>
   {{ else }}
   {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
