@@ -9,7 +9,7 @@
     {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
     <h4>laatst bijgewerkt
       <p>
-        {{ .PublishDate.Format .Site.Params.dateFormat }} {{ .Page.Params.time }}
+        {{ .PublishDate.Format .Site.Params.dateFormat }} {{ .Page.Params.time.Format .Site.Params.timeFormat }}
         {{ if cond (ne .Params.outdated nil) .Params.outdated .Site.Params.outdated.enable }}
         {{ if gt $days .Site.Params.outdated.limit }}
         <span>⚠️</span>
