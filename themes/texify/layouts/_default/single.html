@@ -9,7 +9,7 @@
     {{ .Content }}
     test for about
     <br>
-    {{ $days = div (sub now.Unix .Lastmod.Unix) 86400 }}
+    {{ $days := div (sub now.Unix .Lastmod.Unix) 86400.0 }}
     {{ $days }}
     <br>
     {{ printf .Site.Params.outdated.warning $days | safeHTML }}
