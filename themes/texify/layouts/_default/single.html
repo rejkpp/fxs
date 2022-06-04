@@ -7,9 +7,6 @@
   {{ if ne .Section "koers"}}
   <article class="content center">
     {{ .Content }}
-    test for about
-    <br>
-    {{ .PublishDate.Format .Site.Params.dateFormat }} {{ .Page.Params.time }}
   </article>
   {{ else }}
   {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
