@@ -15,7 +15,7 @@ languageCode = "nl"                # content language
 paginate = 5                       # number of posts each page
 rssLimit = 10                      # maximum items in rss feeds
 theme = "texify"        # theme directory name
-title = "forexsu.co"                   # website title
+title = "foreign exchange suriname"       # website title
 timeZone = "America/Paramaribo"
 
 [author]
