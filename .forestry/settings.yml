@@ -7,7 +7,6 @@ sections:
 - type: document
   path: data/dsb.json
   label: dsb
-  match: "**/*"
 - type: directory
   path: content
   label: Pages
