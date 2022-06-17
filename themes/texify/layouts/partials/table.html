@@ -1,0 +1,44 @@
+<table>
+  <thead>
+  <tr>
+    <th style="text-align:center">bank</th>
+    <th style="text-align:center">$ aankoop</th>
+    <th style="text-align:center">$ verkoop</th>
+    <th style="text-align:center">datum</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:center">dsb</td>
+      {{ range first 1 .Site.Data.dsb }}
+      <td style="text-align:center">{{.usd_aankoop}}</td>
+      <td style="text-align:center">{{.usd_verkoop}}</td>
+      <td style="text-align:center">{{now.Format "2006.01.02 15:04"}}</td>
+      {{ end }}
+    </tr>
+    <tr>
+      <td style="text-align:center">fina</td>
+      {{ range first 1 .Site.Data.fina }}
+      <td style="text-align:center">{{.usd_aankoop}}</td>
+      <td style="text-align:center">{{.usd_verkoop}}</td>
+      <td style="text-align:center">{{now.Format "2006.01.02 15:04"}}</td>
+      {{ end }}
+    </tr>
+    <tr>
+      <td style="text-align:center">hakrin</td>
+      {{ range first 1 .Site.Data.hakrin }}
+      <td style="text-align:center">{{.usd_aankoop}}</td>
+      <td style="text-align:center">{{.usd_verkoop}}</td>
+      <td style="text-align:center">{{now.Format "2006.01.02 15:04"}}</td>
+      {{ end }}
+    </tr>
+    <tr>
+    <td style="text-align:center">republic</td>
+    {{ range first 1 .Site.Data.republic }}
+    <td style="text-align:center">{{.usd_aankoop}}</td>
+    <td style="text-align:center">{{.usd_verkoop}}</td>
+    <td style="text-align:center">{{now.Format "2006.01.02 15:04"}}</td>
+    {{ end }}
+    </tr>
+  </tbody>
+</table>

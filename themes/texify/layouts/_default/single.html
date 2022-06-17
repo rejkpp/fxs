@@ -9,41 +9,7 @@
     {{ .Content }}
   </article>
 
-      <table>
-        <thead>
-        <tr>
-          <th style="text-align:center">bank</th>
-          <th style="text-align:center">$ aankoop</th>
-          <th style="text-align:center">$ verkoop</th>
-          <th style="text-align:center">datum</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td style="text-align:center">dsb</td>
-            {{ range first 1 .Site.Data.dsb }}
-            <td style="text-align:center">{{.usd_aankoop}}</td>
-            <td style="text-align:center">{{.usd_verkoop}}</td>
-            <td style="text-align:center">{{now.Format "2006.01.02 15:04"}}</td>
-            {{ end }}
-          </tr>
-          <tr>
-            <td style="text-align:center">fina</td>
-            <td style="text-align:center"></td>
-            <td style="text-align:center"></td>
-          </tr>
-          <tr>
-            <td style="text-align:center">hakrin</td>
-            <td style="text-align:center"></td>
-            <td style="text-align:center"></td>
-          </tr>
-          <tr>
-          <td style="text-align:center">republic</td>
-          <td style="text-align:center"></td>
-          <td style="text-align:center"></td>
-          </tr>
-        </tbody>
-      </table>
+  {{ partial "table.html" . }}
 
   {{ else if ne .Section "koers"}}
     <article class="content center">
