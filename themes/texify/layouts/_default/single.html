@@ -4,11 +4,10 @@
 
 {{ define "main" }}
 <main id="main" class="index">
-  {{ if ne .Section "koers"}}
+  {{ if eq .Title "testing"}}
   <article class="content center">
     {{ .Content }}
   </article>
-
 
       <table>
         <thead>
@@ -46,7 +45,10 @@
         </tbody>
       </table>
 
-
+  {{ else if ne .Section "koers"}}
+    <article class="content center">
+      {{ .Content }}
+    </article>
 
   {{ else }}
   {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
