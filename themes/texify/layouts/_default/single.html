@@ -24,7 +24,7 @@
             {{ range first 1 .Site.Data.dsb }}
             <td style="text-align:center">{{.usd_aankoop}}</td>
             <td style="text-align:center">{{.usd_verkoop}}</td>
-            <td style="text-align:center">{{.datum}}</td>
+            <td style="text-align:center">{{now.Format "2006.01.02 15:04"}}</td>
             {{ end }}
           </tr>
           <tr>
