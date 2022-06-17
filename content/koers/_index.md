@@ -1,6 +1,7 @@
 +++
-aliases = ["koers"]
-title = "koers"
+aliases = []
 author = "forexsu.co"
-tags = [""]
+tags = []
+title = "koers"
+
 +++
