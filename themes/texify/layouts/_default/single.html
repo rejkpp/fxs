@@ -8,6 +8,44 @@
   <article class="content center">
     {{ .Content }}
   </article>
+
+
+      <table>
+        <thead>
+        <tr>
+          <th style="text-align:center">bank</th>
+          <th style="text-align:center">$ aankoop</th>
+          <th style="text-align:center">$ verkoop</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            {{ range .Site.Data.dsb }}
+            <td style="text-align:center">dsb</td>
+            <td style="text-align:center">{{.usd_aankoop}}</td>
+            <td style="text-align:center">{{.usd_verkoop}}</td>
+          </tr>
+          <tr>
+            <td style="text-align:center">fina</td>
+            <td style="text-align:center"></td>
+            <td style="text-align:center"></td>
+          </tr>
+          <tr>
+            <td style="text-align:center">hakrin</td>
+            <td style="text-align:center"></td>
+            <td style="text-align:center"></td>
+          </tr>
+          <tr>
+          <td style="text-align:center">republic</td>
+          <td style="text-align:center"></td>
+          <td style="text-align:center"></td>
+          </tr>
+        </tbody>
+      </table>
+
+  {{ end }}
+
+
   {{ else }}
   {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
   <h4>{{ .PublishDate.Format .Site.Params.dateFormat }}
