@@ -1,20 +1,11 @@
 [
   {
-    "datum": "17 juni 2022",
+    "datum": "2022.06.16",
     "usd_aankoop": "21.95",
     "usd_verkoop": "22.35",
-    "eur_aankoop": "23.00",
-    "eur_verkoop": "23.40",
-    "eur_naar_usd": "1.0390",
-    "usd_naar_eur": "1.0706"
-  },
-  {
-    "datum": "2022.06.16",
-    "usd_aankoop": "22.20",
-    "usd_verkoop": "22.60",
-    "eur_aankoop": "23.42",
-    "eur_verkoop": "23.84",
-    "eur_naar_usd": "1.0390",
-    "usd_naar_eur": "1.0706"
+    "eur_aankoop": "22.25",
+    "eur_verkoop": "23.05",
+    "eur_naar_usd": "—",
+    "usd_naar_eur": "—"
   }
 ]
