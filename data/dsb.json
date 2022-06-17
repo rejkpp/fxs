@@ -5,7 +5,7 @@
     "usd_verkoop"  : "22.60",
     "eur_aankoop"   : "23.42",
     "eur_verkoop"  : "23.84",
-    "eurusd_aankoop": "1.0390",
-    "eurusd_verkoop":  "1.0706"
+    "eur_naar_usd": "1.0390",
+    "usd_naar_eur":  "1.0706"
   }
 ]
