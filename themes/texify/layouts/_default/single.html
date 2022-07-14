@@ -7,9 +7,9 @@
   {{ if eq .Title "testing"}}
   <article class="content center">
     {{ .Content }}
+    {{ partial "table.html" . }}
   </article>
 
-  {{ partial "table.html" . }}
 
   {{ else if ne .Section "koers"}}
     <article class="content center">
