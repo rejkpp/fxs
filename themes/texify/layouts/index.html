@@ -29,12 +29,12 @@
     {{ end }}
     <article class="content center">
       {{ .Content }}
-      {{ range first 1 (where .Site.RegularPages "Type" "==" "crypto") }}
-        {{ .Content }}
-      {{ end }}
       <h6>
         <a href="/crypto">crypto beschikbaar</a>
       </h6>
+      {{ range first 1 (where .Site.RegularPages "Type" "==" "crypto") }}
+        {{ .Content }}
+      {{ end }}
     </article>
 
     <div class="paginator">
