@@ -1,0 +1,47 @@
+{{ define "head" }}
+<link rel="stylesheet" href='{{ "css/index.css" | absURL }}'>
+{{ end }}
+
+{{ define "main" }}
+<main id="main" class="index">
+  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "==" "crypto") }}
+  {{ range first 1 $paginator.Pages }}
+    {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
+      <h4>{{ .PublishDate.Format .Site.Params.dateFormat }}
+        {{ if cond (ne .Params.outdated nil) .Params.outdated .Site.Params.outdated.enable }}
+        {{ if gt $days .Site.Params.outdated.limit }}
+        <p>⚠️ oude koersen</p>
+        <span></span>
+        {{ else if eq $days .Site.Params.outdated.limit}}
+        <p>✅ actuele koersen</p>
+      {{ end }}
+      {{ end }}
+      </h4>
+      <article class="content center">
+          {{ .Content }}
+
+          {{ range where .Site.RegularPages "Title" "rates" }}
+            {{ .Content }}
+          {{ end }}
+
+          <h5>crypto kopen. contact via</h5>
+          {{ partial "whatsapp.html" .}}
+      </article>
+
+  {{ end }}
+  <!-- navigation links to other "posts" -->
+  <div class="paginator">
+    {{ if .NextInSection }}
+    <a class="link" href="{{ .NextInSection.Permalink }}"><</a>
+    {{ else }}
+    <a></a>
+    {{ end }}
+    {{ if .PrevInSection }}
+    <a class="link" href="{{ .PrevInSection.Permalink }}">></a>
+    {{ else }}
+    <a></a>
+    {{ end }}
+  </div>
+
+</main>
+{{ end }}

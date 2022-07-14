@@ -29,7 +29,14 @@
     {{ end }}
     <article class="content center">
       {{ .Content }}
+      {{ range first 1 (where .Site.RegularPages "Type" "==" "crypto") }}
+        {{ .Content }}
+      {{ end }}
+      <h6>
+        <a href="/crypto">crypto beschikbaar</a>
+      </h6>
     </article>
+
     <div class="paginator">
       {{ if .NextInSection }}
       <a class="link" href="{{ .NextInSection.Permalink }}"><</a>
@@ -42,6 +49,7 @@
       <a></a>
       {{ end }}
     </div>
+
   {{ end }}
 </main>
 {{ end }}
