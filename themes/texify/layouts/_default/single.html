@@ -90,6 +90,12 @@
 
     <article class="content center">
       {{ .Content }}
+      <h6>
+        <a href="/crypto">crypto kopen</a>
+      </h6>
+      {{ range first 1 (where .Site.RegularPages "Type" "==" "crypto") }}
+        {{ .Content }}
+      {{ end }}
     </article>
 
     <!-- navigation links to other "posts" -->
