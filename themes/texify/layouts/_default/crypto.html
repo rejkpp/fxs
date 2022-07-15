@@ -7,7 +7,10 @@
   {{ $paginator := .Paginate (where .Site.RegularPages "Type" "==" "crypto") }}
   {{ range first 1 $paginator.Pages }}
     {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
-      <h4>{{ .PublishDate.Format .Site.Params.dateFormat }}
+      <h4>
+        <p>✅ actuele koersen</p>
+      </h4>
+      <!-- <h4>{{ .PublishDate.Format .Site.Params.dateFormat }}
         {{ if cond (ne .Params.outdated nil) .Params.outdated .Site.Params.outdated.enable }}
         {{ if gt $days .Site.Params.outdated.limit }}
         <p>⚠️ oude koersen</p>
@@ -16,7 +19,7 @@
         <p>✅ actuele koersen</p>
       {{ end }}
       {{ end }}
-      </h4>
+      </h4> -->
       <article class="content center">
           {{ .Content }}
 
