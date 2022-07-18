@@ -5,10 +5,10 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
-  path: content/koers
+  path: content
   label: koers
   create: all
-  match: "**/*"
+  match: koers/*
 - type: document
   path: data/dsb.json
   label: dsb
