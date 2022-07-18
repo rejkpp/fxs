@@ -1,0 +1,34 @@
+{{ if eq (.Get 0) "usd_aankoop"}}
+  {{ range first 1 .Site.Data.dsb }}
+     {{ lang.FormatNumberCustom 2 .usd_aankoop "- ." }}
+  {{ end }}
+{{ else if eq (.Get 0) "usd_verkoop"}}
+  {{ range first 1 .Site.Data.dsb }}
+     {{ lang.FormatNumberCustom 2 .usd_verkoop "- ." }}
+  {{ end }}
+{{ else if eq (.Get 0) "eur_aankoop"}}
+  {{ range first 1 .Site.Data.dsb }}
+     {{ lang.FormatNumberCustom 2 .eur_aankoop "- ." }}
+  {{ end }}
+{{ else if eq (.Get 0) "eur_verkoop"}}
+  {{ range first 1 .Site.Data.dsb }}
+     {{ lang.FormatNumberCustom 2 .eur_verkoop "- ." }}
+  {{ end }}
+{{ else if eq (.Get 0) "eur_naar_usd"}}
+  {{ range first 1 .Site.Data.dsb }}
+    {{ lang.FormatNumberCustom 4 .eur_naar_usd "- ." }}
+  {{ end }}
+{{ else if eq (.Get 0) "usd_naar_eur"}}
+  {{ range first 1 .Site.Data.dsb }}
+    {{ lang.FormatNumberCustom 4 .usd_naar_eur "- ." }}
+  {{ end }}
+{{ else if eq (.Get 0) "status"}}
+  {{ range first 1 .Site.Data.dsb }}
+    {{ if eq .datum ( now.Format "2006.01.02" ) }}
+      <span style="font-size:9px;">🟢</span>
+    {{ else }}
+      <span style="font-size:9px;">🟡</span>
+    {{ end }}
+  {{ end }}
+{{ else }}
+{{end}}

@@ -5,30 +5,24 @@ time = "10:30"
 title = "test"
 
 +++
+
 bank|$ aankoop|$ verkoop
 :-----:|:-----:|:-----:|:-----:
-dsb | 
-fina |
-hakrin  |22.95|23.45|
-republic  |22.70|23.10|
-
-{{< rates-banks dsb >}}
-<br>
-{{< rates-banks fina >}}
-<br>
-{{< rates-banks hakrin >}}
-<br>
-{{< rates-banks republic >}}
+dsb |{{< dsb usd_aankoop>}}|{{< dsb usd_verkoop>}}|{{< dsb status>}}
+fina |{{< fina usd_aankoop>}}|{{< fina usd_verkoop>}}|{{< fina status>}}
+hakrin |{{< hakrin usd_aankoop>}}|{{< hakrin usd_verkoop>}}|{{< hakrin status>}}
+republic |{{< republic usd_aankoop>}}|{{< republic usd_verkoop>}}|{{< republic status>}}
 
 bank|€ aankoop|€ verkoop
-:-----:|:-----:|:-----:
-dsb  |23.47|23.85
-fina  |23.42|23.90
-hakrin  |23.35|23.85
+:-----:|:-----:|:-----:|:-----:
+dsb |{{< dsb eur_aankoop>}}|{{< dsb eur_verkoop>}}|{{< dsb status>}}
+fina |{{< fina eur_aankoop>}}|{{< fina eur_verkoop>}}|{{< fina status>}}
+hakrin |{{< hakrin eur_aankoop>}}|{{< hakrin eur_verkoop>}}|{{< hakrin status>}}
+republic |{{< republic eur_aankoop>}}|{{< republic eur_verkoop>}}|{{< republic status>}}
 
 bank|eur → usd|usd → eur
-:-----:|:-----:|:-----:
-dsb  |1.0016|1.0322
-fina  |0.9970|1.0370
-hakrin  |0.9800|1.0400
+:-----:|:-----:|:-----:|:-----:
+dsb |{{< dsb eur_naar_usd>}}|{{< dsb usd_naar_eur>}}|{{< dsb status>}}
+fina |{{< fina eur_naar_usd>}}|{{< fina usd_naar_eur>}}|{{< fina status>}}
+hakrin |{{< hakrin eur_naar_usd>}}|{{< hakrin usd_naar_eur>}}|{{< hakrin status>}}
 republic  |—|—
