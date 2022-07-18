@@ -25,9 +25,9 @@
 {{ else if eq (.Get 0) "status"}}
   {{ range first 1 .Site.Data.fina }}
     {{ if eq .datum ( now.Format "2006.01.02" ) }}
-      <span style="font-size:9px;">🟢</span>
+      <span style="">🟢</span>
     {{ else }}
-      <span style="font-size:9px;">🟡</span>
+      <span style="">🟡</span>
     {{ end }}
   {{ end }}
 {{ else }}
