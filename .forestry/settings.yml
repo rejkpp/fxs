@@ -5,6 +5,10 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
+  path: data/fina.json
+  label: fina
+  match: "**/*"
+- type: document
   path: data/dsb.json
   label: dsb
 upload_dir: static/uploads
