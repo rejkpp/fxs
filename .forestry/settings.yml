@@ -5,17 +5,24 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
+  path: data/dsb.json
+  label: dsb
+- type: document
   path: data/fina.json
   label: fina
   match: "**/*"
+- type: document
+  path: data.hakrin.json
+  label: hakrin
+  match: "**/*"
+- type: document
+  path: data/republic.json
+  label: republic
 - type: directory
   path: content/koers
   label: koers
   create: all
   match: "/*"
-- type: document
-  path: data/dsb.json
-  label: dsb
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
