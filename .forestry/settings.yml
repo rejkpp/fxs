@@ -17,11 +17,6 @@ sections:
   path: data/dsb.json
   label: dsb
 - type: directory
-  path: content
-  label: Pages
-  create: all
-  match: "*"
-- type: directory
   path: content/koers
   label: Koers
   create: all
