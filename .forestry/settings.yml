@@ -10,11 +10,9 @@ sections:
 - type: document
   path: data/fina.json
   label: fina
-  match: "**/*"
 - type: document
-  path: data.hakrin.json
+  path: data/hakrin.json
   label: hakrin
-  match: "**/*"
 - type: document
   path: data/republic.json
   label: republic
