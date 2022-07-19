@@ -5,9 +5,11 @@ time = "10:30"
 title = "multi"
 
 +++
-
-| &nbsp;aankoop&nbsp;| &nbsp;verkoop&nbsp;
-:-----:|:-----:|:-----:
-usd  |{{< multi usd_aankoop>}}|{{< multi usd_verkoop>}}|{{< multi status>}}
+mte| &nbsp;aankoop&nbsp;| &nbsp;verkoop&nbsp;
+:-----:|:-----:|:-----:|:-----:
+&nbsp;&nbsp;usd&nbsp;&nbsp;  |{{< multi usd_aankoop>}}|{{< multi usd_verkoop>}}|{{< multi status>}}
 eur  | {{< multi eur_aankoop>}}|{{< multi eur_verkoop>}}|{{< multi status>}}
-&nbsp;eur/usd|{{< multi eur_naar_usd>}}|{{< multi usd_naar_eur>}}|{{< multi status>}}
+
+mte| eur → usd|usd → eur
+:-----:|:-----:|:-----:|:-----:
+eur/usd|{{< multi eur_naar_usd>}}|{{< multi usd_naar_eur>}}|{{< multi status>}}

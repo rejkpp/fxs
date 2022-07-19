@@ -1,0 +1,19 @@
+<h3>
+multi track exchange
+</h3>
+<br>
+<h4>
+  {{ range first 1 .Site.Data.multi }}
+    {{ .datum }}
+    {{ if eq .datum ( now.Format "2006.01.02" ) }}
+      <p>✅ actuele koersen</p>
+    {{ else }}
+      <p>⚠️ oude koersen</p>
+    {{ end }}
+  {{ end }}
+</h4>
+
+<article class="content center">
+  {{ .Content }}
+  {{ partial "multi-copy.html" .}}
+</article>
