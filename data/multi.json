@@ -27,12 +27,12 @@
     "usd_naar_eur": "1.01"
   },
   {
-    "datum": "2021.12.31",
-    "usd_aankoop": "21.00",
-    "usd_verkoop": "21.60",
-    "eur_aankoop": "23.42",
-    "eur_verkoop": "23.84",
-    "eur_naar_usd": "1.0390",
-    "usd_naar_eur": "1.0706"
+    "datum": "2022.07.14",
+    "usd_aankoop": "22.4",
+    "usd_verkoop": "22.75",
+    "eur_aankoop": "22.4",
+    "eur_verkoop": "22.75",
+    "eur_naar_usd": "0.95",
+    "usd_naar_eur": "1.01"
   }
 ]
