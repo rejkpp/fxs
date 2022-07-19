@@ -5,22 +5,24 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
+  path: data/multi.json
+  label: koersen
+- type: document
   path: data/dsb.json
   label: dsb
+  read_only: true
 - type: document
   path: data/fina.json
   label: fina
+  read_only: true
 - type: document
   path: data/hakrin.json
   label: hakrin
+  read_only: true
 - type: document
   path: data/republic.json
   label: republic
-- type: directory
-  path: content/koers
-  label: koers
-  create: all
-  match: "/*"
+  read_only: true
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
