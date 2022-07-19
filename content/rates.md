@@ -1,6 +1,6 @@
 +++
 author = "forexsu.co"
-date = 2022-07-18T03:00:00Z
+date = 2022-07-19T03:00:00Z
 time = "16:30"
 title = "rates"
 
