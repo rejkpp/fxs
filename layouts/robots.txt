@@ -2,11 +2,7 @@
 User-agent: *
 
 {{range .Pages }}
-  {{ if or
-    (eq .RelPermalink "/")
-    (eq .RelPermalink "/crypto/")
-  }}
-  {{ else }}
-Disallow: {{.RelPermalink}}
-  {{end}}
+  {{ if or (eq .RelPermalink "/") (eq .RelPermalink "/crypto/") }}
+Allow: {{.RelPermalink}}
+  {{ else }}Disallow: {{.RelPermalink}}{{end}}
 {{end}}
