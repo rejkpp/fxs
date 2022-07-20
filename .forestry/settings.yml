@@ -7,7 +7,6 @@ sections:
 - type: document
   path: content/multi
   label: table
-  match: "**/*"
 - type: document
   path: data/multi.json
   label: koersen
