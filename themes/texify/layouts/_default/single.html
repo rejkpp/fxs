@@ -4,27 +4,9 @@
 
 {{ define "main" }}
 <main id="main" class="index">
-  <!-- page: "testing" for using data json files -->
-  {{ if eq .Title "testing"}}
-    <article class="content center">
-      {{ .Content }}
-      {{ partial "table.html" . }}
-    </article>
-
   <!-- page: "crypto" -->
-  {{ else if eq .Section "crypto"}}
-    {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
-    <h4>{{ .PublishDate.Format .Site.Params.dateFormat }}
-      {{ if cond (ne .Params.outdated nil) .Params.outdated .Site.Params.outdated.enable }}
-      {{ if gt $days .Site.Params.outdated.limit }}
-      <p>⚠️ oude koersen</p>
-      <span></span>
-      {{ else if eq $days .Site.Params.outdated.limit}}
-      <p>✅ actuele koersen</p>
-    {{ end }}
-    {{ end }}
-
-    </h4>
+  {{ if eq .Section "crypto"}}
+    {{ partial "datecheck.html" .}}
     <article class="content center">
         {{ .Content }}
 
@@ -34,23 +16,19 @@
 
   <!-- page: "rates" -->
   {{ else if eq .Title "rates"}}
-    {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
-    <h4>{{ .PublishDate.Format .Site.Params.dateFormat }}
-      {{ if cond (ne .Params.outdated nil) .Params.outdated .Site.Params.outdated.enable }}
-      {{ if gt $days .Site.Params.outdated.limit }}
-      <p>⚠️ oude koersen</p>
-      <span></span>
-      {{ else if eq $days .Site.Params.outdated.limit}}
-      <p>✅ actuele koersen</p>
-    {{ end }}
-    {{ end }}
-
-    </h4>
+    {{ partial "datecheck.html" .}}
     <article class="content center">
       {{ .Content }}
 
       <h5>wisselen via whatsapp</h5>
       {{ partial "whatsapp.html" .}}
+    </article>
+
+  <!-- page: "demo" -->
+  {{ else if eq .Title "demo"}}
+    {{ partial "datecheck.html" .}}
+    <article class="content center">
+      {{ .Content }}
     </article>
 
   <!-- page: "cambio" -->
@@ -61,16 +39,7 @@
 
   <!-- pages for "koers" posts -->
   {{ else if eq .Section "koers"}}
-    {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
-    <h4>{{ .PublishDate.Format .Site.Params.dateFormat }}
-      {{ if cond (ne .Params.outdated nil) .Params.outdated .Site.Params.outdated.enable }}
-      {{ if gt $days .Site.Params.outdated.limit }}
-      <p>⚠️ oude koersen</p>
-      {{ else if eq $days .Site.Params.outdated.limit}}
-      <p>✅ actuele koersen</p>
-      {{ end }}
-      {{ end }}
-    </h4>
+    {{ partial "datecheck.html" .}}
 
     <!-- code for tags (keywords) -->
     {{ if ne .Params.tags nil }}
