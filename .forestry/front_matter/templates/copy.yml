@@ -5,3 +5,5 @@ fields:
 - type: text
   name: address
   label: address
+pages:
+- content/multi.md
