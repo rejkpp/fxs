@@ -7,11 +7,10 @@ sections:
 - type: document
   path: content/multi.md
   label: table
-  read_only: true
+  read_only: false
 - type: document
   path: data/multi.json
   label: koersen
-  read_only: false
 - type: document
   path: layouts/partials/multi-copy.html
   label: text
