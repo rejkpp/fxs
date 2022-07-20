@@ -3,17 +3,8 @@ label: copy
 hide_body: false
 fields:
 - type: text
-  name: author
-  label: author
-- type: datetime
-  name: date
-  label: date
-- type: text
   name: time
   label: time
-- type: text
-  name: title
-  label: title
 - type: text
   name: address
   label: address
