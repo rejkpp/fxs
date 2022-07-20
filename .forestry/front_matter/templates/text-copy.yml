@@ -12,3 +12,5 @@ fields:
       format: html-blocks
   label: testing
   description: description
+pages:
+- layouts/partials/multi-copy.html
