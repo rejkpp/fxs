@@ -1,5 +1,5 @@
 [
-  "dsb":[
+  "dsb":{
     {
       "datum": "2022.07.20",
       "usd_aankoop": "22.75",
@@ -37,8 +37,8 @@
       "usd_naar_eur": "1.01"
     }
 
-  ],
-  "fina":[
+  },
+  "fina":{
     {
       "datum": "2022.07.18",
       "usd_aankoop": "23.20",
@@ -57,8 +57,8 @@
       "eur_naar_usd": "0.9840",
       "usd_naar_eur": "1.0240"
     }
-  ],
-  "hakrin":[
+  },
+  "hakrin":{
     {
       "datum": "2022.07.18",
       "usd_aankoop": "22.95",
@@ -77,8 +77,8 @@
       "eur_naar_usd": "1.0250",
       "usd_naar_eur": "1.0550"
     }
-  ],
-  "republic":[
+  },
+  "republic":{
     {
       "datum": "2022.07.17",
       "usd_aankoop": "22.70",
@@ -97,5 +97,5 @@
       "eur_naar_usd": "—",
       "usd_naar_eur": "—"
     }
-  ]
+  }
 ]
