@@ -14,13 +14,13 @@
     margin-bottom: 0;
 }
 
+.noline {
+  text-decoration: none;
+}
+
 .content a {
     color: #AA0000;
     text-decoration: underline;
-}
-
-.noline {
-  text-decoration: none;
 }
 
 .content a.footnote-ref::before {
