@@ -5,6 +5,10 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
+  path: layouts/partials/multi-copy.html
+  label: text
+  match: "**/*"
+- type: document
   path: data/multi.json
   label: koersen
 upload_dir: static/uploads
