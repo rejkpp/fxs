@@ -7,9 +7,6 @@ sections:
 - type: document
   path: data/multi.json
   label: koersen
-- type: document
-  path: layouts/partials/multi-copy.html
-  label: text
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
