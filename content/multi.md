@@ -15,4 +15,4 @@ title = "multi"
 | :---: | :---: | :---: |
 |  €/$  | {{< multi eur_naar_usd>}} | {{< multi usd_naar_eur>}} |
 
-giraal aankoop/verkoop ook mogelijk.
+##### giraal aankoop/verkoop ook mogelijk.
