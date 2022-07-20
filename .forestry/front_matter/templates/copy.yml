@@ -3,8 +3,5 @@ label: copy
 hide_body: false
 fields:
 - type: text
-  name: time
-  label: time
-- type: text
   name: address
   label: address
