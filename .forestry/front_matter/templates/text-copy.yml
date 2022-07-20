@@ -1,16 +1,6 @@
 ---
 label: text-copy
 hide_body: false
-fields:
-- name: testing
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: true
-    schema:
-      format: html-blocks
-  label: testing
-  description: description
+fields: []
 pages:
 - layouts/partials/multi-copy.html
