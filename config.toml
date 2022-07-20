@@ -1,52 +1,97 @@
-baseURL = "https://forexsu.co"
-defaultContentLanguage = "nl"
-disqusShortname = ""
-enableEmoji = true
-enableGitInfo = false
-enableRobotsTXT = true
-googleAnalytics = ""
-hasCJKLanguage = true
-languageCode = "nl"
-paginate = 5
-rssLimit = 10
-theme = "texify"
+###################################################
+# BUILT-IN CONFIGURATION OPTOINS                  #
+# https://gohugo.io/getting-started/configuration #
+###################################################
+
+baseURL = "https://forexsu.co"     # website root path
+disqusShortname = ""               # disqus shortcode
+enableGitInfo = false              # retrieve last modified date from git commits
+enableRobotsTXT = true             # /robots.txt
+enableEmoji = true                 # enable emoji
+googleAnalytics = ""               # google analytics id
+hasCJKLanguage = true              # Chinese/Japanese/Korean
+defaultContentLanguage = "nl"      # content language
+languageCode = "nl"                # content language
+paginate = 5                       # number of posts each page
+rssLimit = 10                      # maximum items in rss feeds
+theme = "texify"        # theme directory name
+title = "foreign exchange suriname"       # website title
 timeZone = "America/Paramaribo"
-title = "foreign exchange suriname"
+
 [author]
-email = "hello@forexsu.co"
-name = "forexsu"
+email = "hello@forexsu.co" # your email
+name = "forexsu"          # your name
+
+# https://gohugo.io/getting-started/configuration-markup
 [markup]
 defaultMarkdownHandler = "goldmark"
 [markup.goldmark.renderer]
-unsafe = true
+unsafe = true # enable html in markdown
 [markup.highlight]
-style = "emacs"
+style = "emacs" # syntax highlight style, see https://xyproto.github.io/splash/docs/
+
+# https://gohugo.io/content-management/menus/
+[[menu.main]]         # sections in the website header
+# identifier = "koers"  # section id
+# name = "koers"        # section display title
+# url = "/"      # path to the section
+# weight = 1          # order of sections
+# [[menu.main]]
+# identifier = "about"
+# name = "about"
+# url = "/about/"
+# weight = 2
+
+# https://gohugo.io/content-management/taxonomies#configure-taxonomies
+[taxonomies]
+# series = "series" # see https://gohugo.io/templates/internal/#open-graph
+# tags = "tags"
+
+
+########################
+# TEXIFY THEME OPTIONS #
+########################
+
 [params]
-customCSS = ["/css/own.css"]
-customJS = [""]
-dateFormat = "2006.01.02"
-description = "actuele wisselkoersen op één plek"
-emphasisWithDots = true
-favicon = "favicon.ico"
-footnote = ""
-fullTextRSS = true
-keywords = ["foreign exchange suriname", "suriname", "forex suriname", "forex su", "forexsu", "fxs", "forexsu.co", "foreignexchangesuriname.com"]
-since = "2022"
-timeFormat = "15:04"
-toc = false
-[params.giscus]
-enable = false
-script = ""
-[params.math]
-enable = false
-use = "katex"
-[params.outdated]
-enable = true
-limit = 0
-warning = "⚠️ oude koersen %d dagen oud."
+description = "actuele wisselkoersen op één plek" # website description
+favicon = "favicon.ico" # path to website icon, relative to ./static
+footnote = """
+""" # notes in the website footer
+keywords = ["foreign exchange suriname", "suriname", "forex suriname", "forex su", "forexsu", "fxs", "forexsu.co", "foreignexchangesuriname.com"] # website keywords
+
+customCSS = ["/css/own.css"]      # path to custom css files, relative to ./static
+customJS = [""]        # path to custom js files, relative to ./static
+dateFormat = "2006.01.02" # date format, see https://gohugo.io/functions/format/
+timeFormat = "15:04" # date format, see https://gohugo.io/functions/format/
+fullTextRSS = true        # output full-text (instead of only summary) rss
+emphasisWithDots = true   # use dots to emphasize chinese texts, see https://zh.wikipedia.org/wiki/%E7%9D%80%E9%87%8D%E5%8F%B7
+since = "2022"            # website created year
+toc = false               # whether to enable table of contents in posts
+
+# add own param option
 [params.own]
 fullTitle = "foreign exchange suriname"
+
+# https://giscus.app
+[params.giscus]
+enable = false # whether to enable giscus
+# paste giscus' <script></script> configuration between the triple quotes
+script = """
+"""
+
+[params.math]
+enable = false # whether to enable math typesetting
+use = "katex"  # katex or mathjax
+
+[params.outdated]
+enable = true # whether to display warnings for outdated posts
+limit = 0   # days between last modified time and outdated time
+# warning to be displayed
+warning = "⚠️ oude koersen %d dagen oud."
+
+# https://utteranc.es
 [params.utterances]
-enable = false
-script = ""
-[taxonomies]
+enable = false # whether to enable utterances
+# paste utterances' <script></script> configuration between the triple quotes
+script = """
+"""
