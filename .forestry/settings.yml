@@ -5,6 +5,10 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
+  path: content/multi
+  label: table
+  match: "**/*"
+- type: document
   path: data/multi.json
   label: koersen
 - type: document
