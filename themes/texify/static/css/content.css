@@ -22,6 +22,9 @@
 .content a.noline {
   text-decoration: none;
 }
+.content a.nocolour {
+  color: inherit;
+}
 
 .content a.footnote-ref::before {
     content: "[";
