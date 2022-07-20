@@ -7,7 +7,6 @@ sections:
 - type: document
   path: content/multi.md
   label: table
-  read_only: false
 - type: document
   path: data/multi.json
   label: koersen
