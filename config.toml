@@ -17,6 +17,7 @@ rssLimit = 10                      # maximum items in rss feeds
 theme = "texify"        # theme directory name
 title = "foreign exchange suriname"       # website title
 timeZone = "America/Paramaribo"
+ignoreErrors = ["error-remote-getjson"]
 
 [author]
 email = "hello@forexsu.co" # your email

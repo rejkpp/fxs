@@ -1,0 +1,20 @@
+{{ $rates := getJSON "https://cme.onrender.com/cme.json" }}
+
+<h4>
+  {{ range first 1 $rates }}
+    {{ .datum }}
+    {{ if eq .datum ( now.Format "2006.01.02" ) }}
+      <p>✅ actuele koersen</p>
+    {{ else }}
+      <p>⚠️ oude koersen</p>
+    {{ end }}
+  {{ end }}
+</h4>
+<br>
+<h4>{{.Params.business}}</h4>
+<h3>{{.Params.businessname}}</h3>
+
+<article class="content center">
+  {{ .Content }}
+  {{ partial "cme-copy.html" .}}
+</article>
