@@ -16,7 +16,7 @@ republic |{{< republic usd_aankoop>}}|{{< republic usd_verkoop>}}|{{< republic s
 
 &nbsp;cambio&nbsp;|$ aankoop|$ verkoop
 :-----:|:-----:|:-----:|:-----:
-[cme](/cme) |{{< fina usd_aankoop>}}|{{< fina usd_verkoop>}}|{{< fina status>}}
+[cme](/cme) |{{< cme usd_aankoop>}}|{{< cme usd_verkoop>}}|{{< cme status>}}
 [dallex](/dallex) |{{< republic usd_aankoop>}}|{{< republic usd_verkoop>}}|{{< republic status>}}
 [florin](/florin) |{{< hakrin usd_aankoop>}}|{{< hakrin usd_verkoop>}}|{{< hakrin status>}}
 [multi](/multi) |{{< multi usd_aankoop>}}|{{< multi usd_verkoop>}}|{{< multi status>}}
@@ -32,7 +32,7 @@ republic |{{< republic eur_aankoop>}}|{{< republic eur_verkoop>}}|{{< republic s
 
 &nbsp;cambio&nbsp;|€ aankoop|€ verkoop
 :-----:|:-----:|:-----:|:-----:
-[cme](/cme) |{{< fina eur_aankoop>}}|{{< fina eur_verkoop>}}|{{< fina status>}}
+[cme](/cme) |{{< cme eur_aankoop>}}|{{< cme eur_verkoop>}}|{{< cme status>}}
 [dallex](/dallex) |{{< republic eur_aankoop>}}|{{< republic eur_verkoop>}}|{{< republic status>}}
 [florin](/florin) |{{< hakrin eur_aankoop>}}|{{< hakrin eur_verkoop>}}|{{< hakrin status>}}
 [multi](/multi) |{{< multi eur_aankoop>}}|{{< multi eur_verkoop>}}|{{< multi status>}}
@@ -48,7 +48,7 @@ republic  |—|—
 
 &nbsp;cambio&nbsp;|eur → usd|usd → eur
 :-----:|:-----:|:-----:|:-----:
-[cme](/cme) |{{< fina eur_naar_usd>}}|{{< fina usd_naar_eur>}}|{{< fina status>}}
+[cme](/cme) |{{< cme eur_naar_usd>}}|{{< cme usd_naar_eur>}}|{{< cme status>}}
 [dallex](/dallex) |{{< hakrin eur_naar_usd>}}|{{< hakrin usd_naar_eur>}}|{{< hakrin status>}}
 [florin](/florin) |{{< multi eur_naar_usd>}}|{{< multi usd_naar_eur>}}|{{< multi status>}}
 [multi](/multi) |{{< multi eur_naar_usd>}}|{{< multi usd_naar_eur>}}|{{< multi status>}}
