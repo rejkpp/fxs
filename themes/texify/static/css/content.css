@@ -45,7 +45,6 @@
 .content p,
 .content pre,
 .content ol,
-.content table,
 .content ul {
     margin-bottom: 1rem;
 }
@@ -123,10 +122,11 @@
 }
 
 .content table {
-    display: contents;
+    /* display: contents; */
     overflow-x: auto;
     margin-left: auto;
     margin-right: auto;
+    border-collapse: collapse;
 }
 
 .content td, .content th {
