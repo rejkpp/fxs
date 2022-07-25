@@ -1,5 +1,5 @@
 {{ $urlPre := "https://forexsu.co/data/" }}
-{{ $cambio := "cme"}}
+{{ $cambio := "multi"}}
 {{ $rates := getJSON $urlPre $cambio ".json"}}
 
 {{ if eq (.Get 0) "usd_aankoop"}}
