@@ -34,12 +34,9 @@
   <!-- page: "cambio" -->
   {{ else if or
     (eq .Title "multi")
-  }}
-  {{ partial "multi.html" . }}
-  {{ else if or
     (eq .Title "cme")
   }}
-  {{ partial "cme.html" . }}
+  {{ partial "cambio.html" . }}
 
   <!-- pages for "koers" posts -->
   {{ else if eq .Section "koers"}}

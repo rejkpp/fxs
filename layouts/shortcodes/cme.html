@@ -1,4 +1,6 @@
-{{ $rates := getJSON "https://cme.onrender.com/cme.json" }}
+{{ $urlPre := "https://forexsu.co/data/" }}
+{{ $cambio := "cme" }}
+{{ $rates := getJSON $urlPre $cambio ".json"}}
 
 {{ if eq (.Get 0) "usd_aankoop"}}
   {{ range first 1 $rates }}

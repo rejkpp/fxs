@@ -1,4 +1,5 @@
-{{ $rates := getJSON "https://forexsu.co/data/multi.json" }}
+{{ $urlPre := "https://forexsu.co/data/" }}
+{{ $rates := getJSON $urlPre .Title ".json"}}
 
 <h4>
   {{ range first 1 $rates }}
@@ -17,5 +18,11 @@
 <article class="content center">
   {{ .Content }}
   <br>
-  {{ partial "multi-copy.html" .}}
+  {{ if eq .Title "multi" }}
+    {{ partial "multi-copy.html" .}}
+  {{ else if eq .Title "cme"}}
+    {{ partial "cme-copy.html" .}}
+  {{ else}}
+  {{ end}}
+
 </article>

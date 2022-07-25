@@ -1,4 +1,4 @@
-{{ $rates := getJSON "https://forexsu.co/data/cme.json" }}
+{{ $rates := .Site.Data.cme }}
 
 <h4>
   {{ range first 1 $rates }}
