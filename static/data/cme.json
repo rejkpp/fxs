@@ -1,0 +1,47 @@
+[
+  {
+    "datum": "2022.07.25",
+    "usd_aankoop": "23.60",
+    "usd_verkoop": "24.30",
+    "eur_aankoop": "23.60",
+    "eur_verkoop": "24.30",
+    "eur_naar_usd": ".985",
+    "usd_naar_eur": "1.005"
+  },
+  {
+    "datum": "2022.07.20",
+    "usd_aankoop": "22.75",
+    "usd_verkoop": "23",
+    "eur_aankoop": "22.75",
+    "eur_verkoop": "23",
+    "eur_naar_usd": ".95",
+    "usd_naar_eur": "1.02"
+  },
+  {
+    "datum": "2022.07.18",
+    "usd_aankoop": "22.5",
+    "usd_verkoop": "23",
+    "eur_aankoop": "22.45",
+    "eur_verkoop": "23",
+    "eur_naar_usd": ".95",
+    "usd_naar_eur": "1.01"
+  },
+  {
+    "datum": "2022.07.15",
+    "usd_aankoop": "22.50",
+    "usd_verkoop": "22.75",
+    "eur_aankoop": "22.40",
+    "eur_verkoop": "22.75",
+    "eur_naar_usd": "0.95",
+    "usd_naar_eur": "1.01"
+  },
+  {
+    "datum": "2022.07.14",
+    "usd_aankoop": "22.4",
+    "usd_verkoop": "22.75",
+    "eur_aankoop": "22.4",
+    "eur_verkoop": "22.75",
+    "eur_naar_usd": "0.95",
+    "usd_naar_eur": "1.01"
+  }
+]

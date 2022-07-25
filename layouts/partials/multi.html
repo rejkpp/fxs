@@ -1,5 +1,7 @@
+{{ $rates := getJSON "https://forexsu.co/data/multi.json" }}
+
 <h4>
-  {{ range first 1 .Site.Data.multi }}
+  {{ range first 1 $rates }}
     {{ .datum }}
     {{ if eq .datum ( now.Format "2006.01.02" ) }}
       <p>✅ actuele koersen</p>
