@@ -8,6 +8,6 @@ title = "rates"
 
 fxs| &nbsp;aankoop&nbsp;| &nbsp;verkoop&nbsp;
 :-----:|:-----:|:-----:
-usd  | 22.70| 23.30
-eur  | 22.70| 23.30
-&nbsp;eur/usd|1.0000|1.0300
+|  usd  | {{< cme usd_aankoop>}} | {{< cme usd_verkoop>}} |
+| eur | {{< cme eur_aankoop>}} | {{< cme eur_verkoop>}} |
+&nbsp;eur/usd|0.9900|1.0300

@@ -8,6 +8,7 @@
   {{ range first 1 $paginator.Pages }}
     {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
       <h4>
+        {{ now.Format .Site.Params.dateFormat}}
         <p>✅ actuele koersen</p>
       </h4>
       <!-- <h4>{{ .PublishDate.Format .Site.Params.dateFormat }}
@@ -27,6 +28,7 @@
             {{ .Content }}
           {{ end }}
 
+          <br>
           <h5>
             crypto kopen. cash. giraal.
             <br>
