@@ -1,6 +1,4 @@
-{{ $urlPre := "https://forexsu.co/data/" }}
-{{ $cambio := "florin" }}
-{{ $rates := getJSON $urlPre $cambio ".json"}}
+{{ $rates := .Site.Data.florin }}
 
 {{ if eq (.Get 0) "usd_aankoop"}}
   {{ range first 1 $rates }}
