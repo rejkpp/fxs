@@ -22,6 +22,10 @@
     {{ partial "multi-copy.html" .}}
   {{ else if eq .Title "cme"}}
     {{ partial "cme-copy.html" .}}
+  {{ else if eq .Title "florin"}}
+    {{ partial "florin-copy.html" .}}
+  {{ else if eq .Title "dallex"}}
+    {{ partial "dallex-copy.html" .}}
   {{ else}}
   {{ end}}
 
