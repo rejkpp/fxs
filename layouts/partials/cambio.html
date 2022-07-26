@@ -1,6 +1,13 @@
-{{ $urlPre := "https://forexsu.co/data/" }}
-{{ $rates := getJSON $urlPre .Title ".json"}}
-
+{{ $rates := .Site.Data.multi }}
+{{ if eq .Title "multi" }}
+  {{ $rates := .Site.Data.multi }}
+{{ else if eq .Title "cme"}}
+  {{ $rates := .Site.Data.cme }}
+{{ else if eq .Title "florin"}}
+  {{ $rates := .Site.Data.florin }}
+{{ else if eq .Title "dallex"}}
+  {{ $rates := .Site.Data.dallex }}
+{{ end}}
 <h4>
   {{ range first 1 $rates }}
     {{ .datum }}
