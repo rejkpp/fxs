@@ -5,14 +5,14 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
+  path: data/cme.json
+  label: cme
+- type: document
   path: data/dallex.json
   label: dallex
 - type: document
   path: data/florin.json
   label: florin
-- type: document
-  path: data/cme.json
-  label: cme
 - type: document
   path: data/multi.json
   label: multi
