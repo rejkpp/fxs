@@ -5,12 +5,21 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
-  path: data/rates.json
-  label: rates
+  path: " /static/data/dallex.json"
+  label: dallex
   match: "**/*"
 - type: document
-  path: data/multi.json
-  label: koersen
+  path: " /static/data/florin.json"
+  label: florin
+  match: "**/*"
+- type: document
+  path: static/data/cme.json
+  label: cme
+  match: "**/*"
+- type: document
+  path: static/data/multi.json
+  label: multi
+  match: "**/*"
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
