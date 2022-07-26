@@ -5,16 +5,16 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
-  path: static/data/dallex.json
+  path: data/dallex.json
   label: dallex
 - type: document
-  path: static/data/florin.json
+  path: data/florin.json
   label: florin
 - type: document
-  path: static/data/cme.json
+  path: data/cme.json
   label: cme
 - type: document
-  path: static/data/multi.json
+  path: data/multi.json
   label: multi
 upload_dir: static/uploads
 public_path: "/uploads"
