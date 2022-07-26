@@ -3,16 +3,16 @@ address = ""
 author = "forexsu.co"
 date = "2022-07-19T03:00:00.000+00:00"
 time = "10:30"
-title = "multi"
+title = "florin"
 business = "cambio"
-businessname = "multi track exchange"
+businessname = "florin exchange cambio"
 
 +++
 |   |  aankoop  |  verkoop  |
 | :---: | :---: | :---: |
-|  usd  | {{< multi usd_aankoop>}} | {{< multi usd_verkoop>}} |
-| eur | {{< multi eur_aankoop>}} | {{< multi eur_verkoop>}} |
+|  usd  | {{< florin usd_aankoop>}} | {{< florin usd_verkoop>}} |
+| eur | {{< florin eur_aankoop>}} | {{< florin eur_verkoop>}} |
 
 |   | eur → usd | usd → eur |
 | :---: | :---: | :---: |
-|  €/$  | {{< multi eur_naar_usd>}} | {{< multi usd_naar_eur>}} |
+|  €/$  | {{< florin eur_naar_usd>}} | {{< florin usd_naar_eur>}} |
