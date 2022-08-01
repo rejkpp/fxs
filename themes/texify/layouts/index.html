@@ -7,6 +7,7 @@
   {{ $days := div (sub now.Unix .Lastmod.Unix) 86400 }}
   <h4>laatst bijgewerkt
     <p>
+      {{ .Lastmod }} <br>
       {{ .Lastmod.Format "2006.01.02 15:04" }}
       {{ if cond (ne .Params.outdated nil) .Params.outdated .Site.Params.outdated.enable }}
       {{ if gt $days .Site.Params.outdated.limit }}
