@@ -3,6 +3,7 @@ author = "forexsu.co"
 date = 2022-07-25T03:00:00Z
 time = "10:30"
 title = "demo"
+Description = "actuele wisselkoersen op één plek"
 
 +++
 ###### ———————————————————————————————————
