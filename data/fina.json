@@ -43,14 +43,5 @@
     "eur_verkoop": "23.90",
     "eur_naar_usd": "0.9970",
     "usd_naar_eur": "1.0370"
-  },
-  {
-    "datum": "2022.07.17",
-    "usd_aankoop": "23.20",
-    "usd_verkoop": "23.50",
-    "eur_aankoop": "23.12",
-    "eur_verkoop": "23.59",
-    "eur_naar_usd": "0.9840",
-    "usd_naar_eur": "1.0240"
   }
 ]
