@@ -13,6 +13,5 @@
 
 {{ now.Format .Site.Params.timeFormat }}
 <br>
-{{ dateFormat "02 Jan 06 15:04 MST" .Date.Local }}
+{{ now.Local.Format .Site.Params.timeFormat  }}
 <br>
-{{ time now "America/Paramaribo" }}
