@@ -3,7 +3,7 @@ new_page_extension: md
 auto_deploy: false
 admin_path: ''
 webhook_url:
-timeZone : "America/Paramaribo"
+timezone : 'America/Paramaribo'
 sections:
 - type: document
   path: data/dsb.json
