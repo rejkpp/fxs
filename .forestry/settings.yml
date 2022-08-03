@@ -5,10 +5,6 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
-  path: content/demo.md
-  label: demo
-  match: "**/*"
-- type: document
   path: data/dsb.json
   label: dsb
 - type: document
@@ -32,6 +28,9 @@ sections:
 - type: document
   path: data/multi.json
   label: multi
+- type: document
+  path: content/demo.md
+  label: demo
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
