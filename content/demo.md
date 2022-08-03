@@ -1,10 +1,9 @@
 +++
 author = "forexsu.co"
 date = 2022-07-25T03:00:00Z
-time = "10:30"
+time = "10:00"
 title = "demo"
 Description = "actuele wisselkoersen op één plek"
-
 +++
 ###### ———————————————————————————————————
 ###### usd-srd
