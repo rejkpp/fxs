@@ -27,7 +27,7 @@
     {{ range first 1 (where .Site.RegularPages "Type" "==" "crypto") }}
       {{ .Content }}
     {{ end }}
-    {{.Lastmod}}
+    <span style="color:slategrey;">{{ .Lastmod.Format .Site.Params.timeFormat }}</span>
   </article>
   <!-- {{ $paginator := .Paginate (where .Site.RegularPages "Type" "==" "koers") }}
   {{ range first 1 $paginator.Pages }}
