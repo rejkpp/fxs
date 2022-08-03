@@ -8,7 +8,7 @@
     laatst bijgewerkt
     <br>
     {{ now.Format .Site.Params.dateFormat }}
-    <span style="color:slategrey;">{{ now.Local.Format .Site.Params.timeFormat }}</span>
+    <span style="color:slategrey;">{{ .Lastmod.Format .Site.Params.timeFormat }}</span>
     <br>
   </h4>
   <br>
@@ -27,7 +27,6 @@
     {{ range first 1 (where .Site.RegularPages "Type" "==" "crypto") }}
       {{ .Content }}
     {{ end }}
-    <span style="color:slategrey;">{{ .Lastmod.Format .Site.Params.timeFormat }}</span>
   </article>
   <!-- {{ $paginator := .Paginate (where .Site.RegularPages "Type" "==" "koers") }}
   {{ range first 1 $paginator.Pages }}
