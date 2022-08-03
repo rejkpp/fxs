@@ -17,7 +17,7 @@ title = "demo"
 | hakrin | {{< hakrin usd_aankoop>}} | {{< hakrin usd_verkoop>}} |
 | republic | {{< republic usd_aankoop>}} | {{< republic usd_verkoop>}} |
 
-|  cambio  | $ aankoop | $ verkoop |
+| cambio | $ aankoop | $ verkoop |
 | :---: | :---: | :---: |
 | cme | {{< cme usd_aankoop>}} | {{< cme usd_verkoop>}} |
 | dallex | {{< dallex usd_aankoop>}} | {{< dallex usd_verkoop>}} |
@@ -35,7 +35,7 @@ title = "demo"
 | hakrin | {{< hakrin eur_aankoop>}} | {{< hakrin eur_verkoop>}} |
 | republic | {{< republic eur_aankoop>}} | {{< republic eur_verkoop>}} |
 
-|  cambio  | € aankoop | € verkoop |
+| cambio | € aankoop | € verkoop |
 | :---: | :---: | :---: |
 | cme | {{< cme eur_aankoop>}} | {{< cme eur_verkoop>}} |
 | dallex | {{< dallex eur_aankoop>}} | {{< dallex eur_verkoop>}} |
@@ -53,7 +53,7 @@ title = "demo"
 | hakrin | {{< hakrin eur_naar_usd>}} | {{< hakrin usd_naar_eur>}} |
 | republic | — | — |
 
-|  cambio  | eur → usd | usd → eur |
+| cambio | eur → usd | usd → eur |
 | :---: | :---: | :---: |
 | cme | {{< cme eur_naar_usd>}} | {{< cme usd_naar_eur>}} |
 | dallex | {{< dallex eur_naar_usd>}} | {{< dallex usd_naar_eur>}} |
@@ -61,3 +61,5 @@ title = "demo"
 | multi | {{< multi eur_naar_usd>}} | {{< multi usd_naar_eur>}} |
 
 ###### ———————————————————————————————————
+
+test
