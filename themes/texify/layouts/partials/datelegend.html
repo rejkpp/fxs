@@ -1,7 +1,7 @@
 <h4 style="line-height:1.5rem;">
   <span style="color:darkgrey;">laatst bijgewerkt</span>
   <br>
-  {{ now.Format .Site.Params.dateFormat }}
+  {{ .Lastmod.Format .Site.Params.dateFormat }}
   <span style="color:grey;">{{ .Lastmod.Format .Site.Params.timeFormat }}</span>
   <br>
 </h4>
