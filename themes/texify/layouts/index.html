@@ -5,10 +5,10 @@
 {{ define "main" }}
 <main id="main" class="index">
   <h4 style="line-height:1.5rem;">
-    laatst bijgewerkt
+    <span style="color:darkgrey;">laatst bijgewerkt</span>
     <br>
     {{ now.Format .Site.Params.dateFormat }}
-    <span style="color:slategrey;">{{ .Lastmod.Format .Site.Params.timeFormat }}</span>
+    <span style="color:grey;">{{ .Lastmod.Format .Site.Params.timeFormat }}</span>
     <br>
   </h4>
   <br>
