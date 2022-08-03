@@ -1,0 +1,13 @@
+<h4 style="line-height:1.5rem;">
+  <span style="color:darkgrey;">laatst bijgewerkt</span>
+  <br>
+  {{ now.Format .Site.Params.dateFormat }}
+  <span style="color:grey;">{{ .Lastmod.Format .Site.Params.timeFormat }}</span>
+  <br>
+</h4>
+<br>
+<h4>
+  <span style="font-size:9px;">🟢</span> = actuele koersen
+  <br>
+  <span style="font-size:9px;">🟡</span> = oude koersen &nbsp;&nbsp;
+</h4>
