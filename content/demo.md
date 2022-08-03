@@ -53,3 +53,5 @@ dallex |{{< dallex eur_naar_usd>}}|{{< dallex usd_naar_eur>}}|{{< dallex status>
 florin |{{< florin eur_naar_usd>}}|{{< florin usd_naar_eur>}}|{{< florin status>}}
 multi |{{< multi eur_naar_usd>}}|{{< multi usd_naar_eur>}}|{{< multi status>}}
 ###### ———————————————————————————————————
+
+test
