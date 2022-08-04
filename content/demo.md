@@ -61,5 +61,3 @@ title = "demo"
 | multi | {{< multi eur_naar_usd>}} | {{< multi usd_naar_eur>}} |
 
 ###### ———————————————————————————————————
-
-test
