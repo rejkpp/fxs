@@ -24,7 +24,7 @@
   {{ end }}
 {{ else if eq (.Get 0) "status"}}
   {{ range first 1 .Site.Data.dsb }}
-    {{ if eq .datum ( .Lastmod.Format "2006.01.02" ) }}
+    {{ if eq .datum ( .Lastmod.Format .Site.Params.dateFormat ) }}
       <span style="font-size:9px;">🟢</span>
     {{ else }}
       <span style="font-size:9px;">🟡</span>
