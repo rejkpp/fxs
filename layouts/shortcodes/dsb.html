@@ -27,6 +27,11 @@
   {{ .datum }}
   <br>
   {{ now.Format "2006.01.02"}}
+  <br>
+  {{ now }}
+  <br>
+  {{ .Lastmod }}
+
     {{ if eq .datum ( .Lastmod.Format .Site.Params.dateFormat ) }}
       <span style="font-size:9px;">🟢</span>
     {{ else }}
