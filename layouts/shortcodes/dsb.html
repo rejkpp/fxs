@@ -24,7 +24,6 @@
   {{ end }}
 {{ else if eq (.Get 0) "status"}}
   {{ range first 1 .Site.Data.dsb }}
-  <br>
     {{ if eq .datum ( now.Format "2006.01.02" ) }}
       <span style="font-size:9px;">🟢</span>
     {{ else }}
