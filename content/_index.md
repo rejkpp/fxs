@@ -13,8 +13,8 @@ republic |{{< republic usd_aankoop>}}|{{< republic usd_verkoop>}}|{{< republic s
 &nbsp;cambio&nbsp;|$ aankoop|$ verkoop
 :-----:|:-----:|:-----:|:-----:
 cme |{{< cme usd_aankoop>}}|{{< cme usd_verkoop>}}|{{< cme status>}}
-dallex |{{< dallex usd_aankoop>}}|{{< dallex usd_verkoop>}}|{{< dallex status>}}
-florin |{{< florin usd_aankoop>}}|{{< florin usd_verkoop>}}|{{< florin status>}}
+dallex |{{< dalflo usd_aankoop>}}|{{< dalflo usd_verkoop>}}|{{< dalflo status>}}
+florin |{{< dalflo usd_aankoop>}}|{{< dalflo usd_verkoop>}}|{{< dalflo status>}}
 multi |{{< multi usd_aankoop>}}|{{< multi usd_verkoop>}}|{{< multi status>}}
 
 ###### ———————————————————————————————————
@@ -29,8 +29,8 @@ republic |{{< republic eur_aankoop>}}|{{< republic eur_verkoop>}}|{{< republic s
 &nbsp;cambio&nbsp;|€ aankoop|€ verkoop
 :-----:|:-----:|:-----:|:-----:
 cme |{{< cme eur_aankoop>}}|{{< cme eur_verkoop>}}|{{< cme status>}}
-dallex |{{< dallex eur_aankoop>}}|{{< dallex eur_verkoop>}}|{{< dallex status>}}
-florin |{{< florin eur_aankoop>}}|{{< florin eur_verkoop>}}|{{< florin status>}}
+dallex |{{< dalflo eur_aankoop>}}|{{< dalflo eur_verkoop>}}|{{< dalflo status>}}
+florin |{{< dalflo eur_aankoop>}}|{{< dalflo eur_verkoop>}}|{{< dalflo status>}}
 multi |{{< multi eur_aankoop>}}|{{< multi eur_verkoop>}}|{{< multi status>}}
 
 ###### ———————————————————————————————————
@@ -45,7 +45,7 @@ republic  |—|—
 &nbsp;cambio&nbsp;|eur → usd|usd → eur
 :-----:|:-----:|:-----:|:-----:
 cme |{{< cme eur_naar_usd>}}|{{< cme usd_naar_eur>}}|{{< cme status>}}
-dallex |{{< dallex eur_naar_usd>}}|{{< dallex usd_naar_eur>}}|{{< dallex status>}}
-florin |{{< florin eur_naar_usd>}}|{{< florin usd_naar_eur>}}|{{< florin status>}}
+dallex |{{< dalflo eur_naar_usd>}}|{{< dalflo usd_naar_eur>}}|{{< dalflo status>}}
+florin |{{< dalflo eur_naar_usd>}}|{{< dalflo usd_naar_eur>}}|{{< dalflo status>}}
 multi |{{< multi eur_naar_usd>}}|{{< multi usd_naar_eur>}}|{{< multi status>}}
 ###### ———————————————————————————————————
