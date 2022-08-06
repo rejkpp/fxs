@@ -5,6 +5,10 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
+  path: data/dalflo.json
+  label: dalflo
+  match: "**/*"
+- type: document
   path: data/dsb.json
   label: dsb
 - type: document
