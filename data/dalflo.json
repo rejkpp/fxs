@@ -1,5 +1,14 @@
 [
   {
+    "datum": "2022.08.10",
+    "usd_aankoop": "22.5",
+    "usd_verkoop": "23.4",
+    "eur_aankoop": "22.5",
+    "eur_verkoop": "23.4",
+    "eur_naar_usd": ".95",
+    "usd_naar_eur": "1.005"
+  },
+  {
     "datum": "2022.08.05",
     "usd_aankoop": "24.5",
     "usd_verkoop": "25.25",
