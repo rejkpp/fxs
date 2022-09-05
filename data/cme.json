@@ -18,6 +18,78 @@
     "usd_naar_eur": ".99"
   },
   {
+    "datum": "2022.09.04",
+    "usd_aankoop": "25.7",
+    "usd_verkoop": "26",
+    "eur_aankoop": "25.4",
+    "eur_verkoop": "25.7",
+    "eur_naar_usd": ".97",
+    "usd_naar_eur": ".99"
+  },
+  {
+    "datum": "2022.09.03",
+    "usd_aankoop": "25.7",
+    "usd_verkoop": "26",
+    "eur_aankoop": "25.35",
+    "eur_verkoop": "25.6",
+    "eur_naar_usd": ".97",
+    "usd_naar_eur": ".99"
+  },
+  {
+    "datum": "2022.09.02",
+    "usd_aankoop": "25.45",
+    "usd_verkoop": "25.75",
+    "eur_aankoop": "25.2",
+    "eur_verkoop": "25.5",
+    "eur_naar_usd": ".975",
+    "usd_naar_eur": ".99"
+  },
+  {
+    "datum": "2022.09.02",
+    "usd_aankoop": "25.4",
+    "usd_verkoop": "25.7",
+    "eur_aankoop": "25.15",
+    "eur_verkoop": "25.4",
+    "eur_naar_usd": ".975",
+    "usd_naar_eur": ".99"
+  },
+  {
+    "datum": "2022.09.01",
+    "usd_aankoop": "25.25",
+    "usd_verkoop": "25.5",
+    "eur_aankoop": "25",
+    "eur_verkoop": "25.25",
+    "eur_naar_usd": ".975",
+    "usd_naar_eur": ".99"
+  },
+  {
+    "datum": "2022.09.01",
+    "usd_aankoop": "25.2",
+    "usd_verkoop": "25.45",
+    "eur_aankoop": "24.85",
+    "eur_verkoop": "25.05",
+    "eur_naar_usd": ".975",
+    "usd_naar_eur": ".99"
+  },
+  {
+    "datum": "2022.08.31",
+    "usd_aankoop": "25",
+    "usd_verkoop": "25.25",
+    "eur_aankoop": "24.7",
+    "eur_verkoop": "25",
+    "eur_naar_usd": ".975",
+    "usd_naar_eur": ".99"
+  },
+  {
+    "datum": "2022.08.31",
+    "usd_aankoop": "25",
+    "usd_verkoop": "25.25",
+    "eur_aankoop": "24.6",
+    "eur_verkoop": "24.8",
+    "eur_naar_usd": ".975",
+    "usd_naar_eur": ".99"
+  },
+  {
     "datum": "2022.08.30",
     "usd_aankoop": "25",
     "usd_verkoop": "25.25",

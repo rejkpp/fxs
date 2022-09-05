@@ -9,6 +9,33 @@
     "usd_naar_eur": "—"
   },
   {
+    "datum": "2022.09.02",
+    "usd_aankoop": "25",
+    "usd_verkoop": "25.4",
+    "eur_aankoop": "24.35",
+    "eur_verkoop": "25.15",
+    "eur_naar_usd": "—",
+    "usd_naar_eur": "—"
+  },
+  {
+    "datum": "2022.09.01",
+    "usd_aankoop": "25",
+    "usd_verkoop": "25.4",
+    "eur_aankoop": "24.49",
+    "eur_verkoop": "25.29",
+    "eur_naar_usd": "—",
+    "usd_naar_eur": "—"
+  },
+  {
+    "datum": "2022.08.31",
+    "usd_aankoop": "25",
+    "usd_verkoop": "25.4",
+    "eur_aankoop": "24.38",
+    "eur_verkoop": "25.18",
+    "eur_naar_usd": "—",
+    "usd_naar_eur": "—"
+  },
+  {
     "datum": "2022.08.30",
     "usd_aankoop": "25",
     "usd_verkoop": "25.4",
