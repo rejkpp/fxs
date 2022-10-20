@@ -24,6 +24,10 @@
   {{ range first 1 $rates }}
     {{ lang.FormatNumberCustom 4 .usd_naar_eur "- ." }}
   {{ end }}
+{{ else if eq (.Get 0) "datum"}}
+  {{ range last 1 $rates }}
+    {{ .datum }}
+  {{ end }}
 {{ else if eq (.Get 0) "status"}}
   {{ range first 1 $rates }}
     {{ if eq .datum ( now.Format "2006.01.02" ) }}
