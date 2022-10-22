@@ -5,7 +5,9 @@ author = "forexsu.co"
 
 ###### ik ben bezig de website te automatiseren
 ###### voor actuele koersen, bezoek de telegram channel:
-https://t.me/+uaicKQdCYDcwMDE0
+###### https://t.me/+uaicKQdCYDcwMDE0
+
+###### ———————————————————————————————————
 
 <!-- ###### usd-srd
 bank|$ aankoop|$ verkoop
