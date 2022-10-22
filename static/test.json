@@ -1,0 +1,101 @@
+[
+  {
+    bank: 'cme',
+    tijd: '2022.10.22 — 03.18.25',
+    datum: '22-Oct-2022 03:18 PM',
+    usd_aankoop: '29.40',
+    usd_verkoop: '29.80',
+    eur_aankoop: '27.75',
+    eur_verkoop: '28.10',
+    eur_naar_usd: '0.9200',
+    usd_naar_eur: '0.9400'
+  },
+  {
+    bank: 'dsb',
+    tijd: '2022.10.22 — 03.18.25',
+    datum: '2022-10-21 14:30:00',
+    usd_aankoop: '28.12',
+    usd_verkoop: '28.69',
+    eur_aankoop: '27.68',
+    eur_verkoop: '28.24',
+    eur_naar_usd: '0.9694',
+    usd_naar_eur: '0.9990'
+  },
+  {
+    bank: 'fina',
+    tijd: '2022.10.22 — 03.18.25',
+    datum: '21-10-2022',
+    usd_aankoop: '28.60',
+    usd_verkoop: '28.90',
+    eur_aankoop: '27.59',
+    eur_verkoop: '28.15',
+    eur_naar_usd: '0.9540',
+    usd_naar_eur: '0.9940'
+  },
+  {
+   bank: 'hakrin',
+   tijd: '2022.10.22 — 03.18.25',
+   datum: '22 October 2022',
+   usd_aankoop: '28.65',
+   usd_verkoop: '28.90',
+   eur_aankoop: '28.05',
+   eur_verkoop: '28.37',
+   eur_naar_usd: '0.9690',
+   usd_naar_eur: '0.9890'
+ },
+ {
+   bank: 'republic',
+   tijd: '2022.10.22 — 03.18.25',
+   datum: '21/10/2022',
+   usd_aankoop: '28.29',
+   usd_verkoop: '28.69',
+   eur_aankoop: '27.43',
+   eur_verkoop: '27.99',
+   eur_naar_usd: '—',
+   usd_naar_eur: '—'
+ },
+ {
+   bank: 'godo',
+   tijd: '2022.10.22 — 03.18.25',
+   datum: 'Vrijdag 21 oktober 2022.',
+   usd_aankoop: '28.40',
+   usd_verkoop: '28.69',
+   eur_aankoop: '26.95',
+   eur_verkoop: '27.50',
+   eur_naar_usd: '0.9394',
+   usd_naar_eur: '1.0223'
+ },
+ {
+   bank: 'vcb',
+   tijd: '2022.10.22 — 03.18.25',
+   datum: '22/10/2022',
+   usd_aankoop: '28.39',
+   usd_verkoop: '28.69',
+   eur_aankoop: '27.85',
+   eur_verkoop: '28.10',
+   eur_naar_usd: '0.9550',
+   usd_naar_eur: '0.9550'
+  },
+  {
+   bank: 'cbvs-giraal',
+   tijd: '2022.10.22 — 03.18.25',
+   datum: '21 oktober - 15:00u',
+   usd_aankoop: '28.92',
+   usd_verkoop: '28.96',
+   eur_aankoop: '27.55',
+   eur_verkoop: '28.24',
+   eur_naar_usd: '—',
+   usd_naar_eur: '—'
+ },
+ {
+   bank: 'cbvs-cash',
+   tijd: '2022.10.22 — 03.18.25',
+    datum: '21 oktober - 15:00u',
+    usd_aankoop: '29.15',
+    usd_verkoop: '29.64',
+    eur_aankoop: '27.80',
+    eur_verkoop: '27.98',
+    eur_naar_usd: '—',
+    usd_naar_eur: '—'
+  }
+]
