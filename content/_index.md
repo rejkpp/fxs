@@ -2,7 +2,10 @@
 author = "forexsu.co"
 +++
 ###### ———————————————————————————————————
-###### usd-srd
+
+
+
+<!-- ###### usd-srd
 bank|$ aankoop|$ verkoop
 :-----:|:-----:|:-----:|:-----:
 dsb |{{< dsb usd_aankoop>}}|{{< dsb usd_verkoop>}}|{{< dsb status>}}
@@ -51,4 +54,4 @@ godo |{{< godo eur_naar_usd>}}|{{< godo usd_naar_eur>}}|{{< godo status>}}
 cme |{{< cme eur_naar_usd>}}|{{< cme usd_naar_eur>}}|{{< cme status>}}
 florin |{{< dalflo eur_naar_usd>}}|{{< dalflo usd_naar_eur>}}|{{< dalflo status>}}
 multi |{{< multi eur_naar_usd>}}|{{< multi usd_naar_eur>}}|{{< multi status>}}
-###### ———————————————————————————————————
+###### ——————————————————————————————————— -->
