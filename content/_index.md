@@ -9,7 +9,7 @@ author = "forexsu.co"
 
 ###### ———————————————————————————————————
 
-###### usd-srd
+###### 💵 usd koersen
 giraal|$ aankoop|$ verkoop
 :-----:|:-----:|:-----:|:-----:
 cbvs |{{< cbvs-giraal usd_aankoop>}}|{{< cbvs-giraal usd_verkoop>}}|{{< cbvs-giraal status>}}
@@ -26,7 +26,7 @@ cbvs |{{< cbvs-cash usd_aankoop>}}|{{< cbvs-cash usd_verkoop>}}|{{< cbvs-cash st
 cme |{{< cme usd_aankoop>}}|{{< cme usd_verkoop>}}|{{< cme status>}}
 
 ###### ———————————————————————————————————
-###### eur-srd
+###### 💶 eur koersen
 giraal|€ aankoop|€ verkoop
 :-----:|:-----:|:-----:|:-----:
 cbvs |{{< cbvs-giraal eur_aankoop>}}|{{< cbvs-giraal eur_verkoop>}}|{{< cbvs-giraal status>}}
@@ -43,7 +43,7 @@ cbvs |{{< cbvs-cash eur_aankoop>}}|{{< cbvs-cash eur_verkoop>}}|{{< cbvs-cash st
 cme |{{< cme eur_aankoop>}}|{{< cme eur_verkoop>}}|{{< cme status>}}
 
 ###### ———————————————————————————————————
-###### eur-usd
+###### 💶 - 💵 eur-usd koersen
 giraal|eur → usd|usd → eur
 :-----:|:-----:|:-----:|:-----:
 dsb |{{< dsb eur_naar_usd>}}|{{< dsb usd_naar_eur>}}|{{< dsb status>}}
