@@ -3,8 +3,8 @@ author = "forexsu.co"
 +++
 ###### ———————————————————————————————————
 
-###### ik ben bezig de website te automatiseren
-###### voor actuele koersen, bezoek de telegram channel:
+###### update, de koersen worden nu regelmatig bijgehouden. het is geautomatiseerd.🎉
+###### er is nu ook een telegram channel met de actuele koersen:
 ###### https://t.me/+uaicKQdCYDcwMDE0
 
 ###### ———————————————————————————————————
