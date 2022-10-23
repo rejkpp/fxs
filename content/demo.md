@@ -12,7 +12,6 @@ title = "demo"
 
 | bank | $ aankoop | $ verkoop |
 | :---: | :---: | :---: |
-| dsb | {{< dsb usd_aankoop>}} | {{< dsb usd_verkoop>}} |
 | fina | {{< fina usd_aankoop>}} | {{< fina usd_verkoop>}} |
 | hakrin | {{< hakrin usd_aankoop>}} | {{< hakrin usd_verkoop>}} |
 | republic | {{< republic usd_aankoop>}} | {{< republic usd_verkoop>}} |
@@ -20,9 +19,6 @@ title = "demo"
 | cambio | $ aankoop | $ verkoop |
 | :---: | :---: | :---: |
 | cme | {{< cme usd_aankoop>}} | {{< cme usd_verkoop>}} |
-| dallex | {{< dallex usd_aankoop>}} | {{< dallex usd_verkoop>}} |
-| florin | {{< florin usd_aankoop>}} | {{< florin usd_verkoop>}} |
-| multi | {{< multi usd_aankoop>}} | {{< multi usd_verkoop>}} |
 
 ###### ———————————————————————————————————
 
@@ -38,9 +34,6 @@ title = "demo"
 | cambio | € aankoop | € verkoop |
 | :---: | :---: | :---: |
 | cme | {{< cme eur_aankoop>}} | {{< cme eur_verkoop>}} |
-| dallex | {{< dallex eur_aankoop>}} | {{< dallex eur_verkoop>}} |
-| florin | {{< florin eur_aankoop>}} | {{< florin eur_verkoop>}} |
-| multi | {{< multi eur_aankoop>}} | {{< multi eur_verkoop>}} |
 
 ###### ———————————————————————————————————
 
@@ -56,8 +49,5 @@ title = "demo"
 | cambio | eur → usd | usd → eur |
 | :---: | :---: | :---: |
 | cme | {{< cme eur_naar_usd>}} | {{< cme usd_naar_eur>}} |
-| dallex | {{< dallex eur_naar_usd>}} | {{< dallex usd_naar_eur>}} |
-| florin | {{< florin eur_naar_usd>}} | {{< florin usd_naar_eur>}} |
-| multi | {{< multi eur_naar_usd>}} | {{< multi usd_naar_eur>}} |
 
 ###### ———————————————————————————————————
