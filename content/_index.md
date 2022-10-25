@@ -43,7 +43,7 @@ cbvs |{{< cbvs-cash eur_aankoop>}}|{{< cbvs-cash eur_verkoop>}}|{{< cbvs-cash st
 cme |{{< cme eur_aankoop>}}|{{< cme eur_verkoop>}}|{{< cme status>}}
 
 ###### ———————————————————————————————————
-###### 💶 - 💵 eur-usd koersen
+###### 💶💵 eur-usd koersen
 giraal|eur → usd|usd → eur
 :-----:|:-----:|:-----:|:-----:
 dsb |{{< dsb eur_naar_usd>}}|{{< dsb usd_naar_eur>}}|{{< dsb status>}}
