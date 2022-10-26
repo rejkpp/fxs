@@ -1,4 +1,4 @@
-{{ $rates := getJSON "http://137.184.146.224:3000/data/cme.json" }}
+{{ $rates := getJSON "http://137.184.146.224:3000/data/fxs.json" }}
 
 {{ if eq (.Get 0) "usd_aankoop"}}
   {{ range last 1 $rates }}

@@ -24,6 +24,7 @@ vcb |{{< vcb usd_aankoop>}}|{{< vcb usd_verkoop>}}|{{< vcb status>}}
 :-----:|:-----:|:-----:|:-----:
 cbvs |{{< cbvs-cash usd_aankoop>}}|{{< cbvs-cash usd_verkoop>}}|{{< cbvs-cash status>}}
 cme |{{< cme usd_aankoop>}}|{{< cme usd_verkoop>}}|{{< cme status>}}
+fxs |{{< fxs usd_aankoop>}}|{{< fxs usd_verkoop>}}|{{< fxs status>}}
 
 ###### ———————————————————————————————————
 ###### 💶 eur koersen
@@ -41,6 +42,7 @@ vcb |{{< vcb eur_aankoop>}}|{{< vcb eur_verkoop>}}|{{< vcb status>}}
 :-----:|:-----:|:-----:|:-----:
 cbvs |{{< cbvs-cash eur_aankoop>}}|{{< cbvs-cash eur_verkoop>}}|{{< cbvs-cash status>}}
 cme |{{< cme eur_aankoop>}}|{{< cme eur_verkoop>}}|{{< cme status>}}
+fxs |{{< fxs eur_aankoop>}}|{{< fxs eur_verkoop>}}|{{< fxs status>}}
 
 ###### ———————————————————————————————————
 ###### 💶💵 eur-usd koersen
@@ -56,4 +58,5 @@ vcb |{{< vcb eur_naar_usd>}}|{{< vcb usd_naar_eur>}}|{{< vcb status>}}
 &nbsp;contant|eur → usd|usd → eur
 :-----:|:-----:|:-----:|:-----:
 cme |{{< cme eur_naar_usd>}}|{{< cme usd_naar_eur>}}|{{< cme status>}}
+fxs |{{< fxs eur_naar_usd>}}|{{< fxs usd_naar_eur>}}|{{< fxs status>}}
 ###### ———————————————————————————————————
