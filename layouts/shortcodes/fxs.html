@@ -1,47 +1,47 @@
 {{ $rates := getJSON "http://137.184.146.224:3000/data/fxs.json" }}
 
 {{ if eq (.Get 0) "usd_aankoop"}}
-  {{ range last 1 $rates }}
+  {{ range first 1 $rates }}
      {{ lang.FormatNumberCustom 2 .usd_aankoop "- ." }}
   {{ end }}
 {{ else if eq (.Get 0) "usd_verkoop"}}
-  {{ range last 1 $rates }}
+  {{ range first 1 $rates }}
      {{ lang.FormatNumberCustom 2 .usd_verkoop "- ." }}
   {{ end }}
 {{ else if eq (.Get 0) "eur_aankoop"}}
-  {{ range last 1 $rates }}
+  {{ range first 1 $rates }}
      {{ lang.FormatNumberCustom 2 .eur_aankoop "- ." }}
   {{ end }}
 {{ else if eq (.Get 0) "eur_verkoop"}}
-  {{ range last 1 $rates }}
+  {{ range first 1 $rates }}
      {{ lang.FormatNumberCustom 2 .eur_verkoop "- ." }}
   {{ end }}
 {{ else if eq (.Get 0) "eur_naar_usd"}}
-  {{ range last 1 $rates }}
+  {{ range first 1 $rates }}
     {{ lang.FormatNumberCustom 4 .eur_naar_usd "- ." }}
   {{ end }}
 {{ else if eq (.Get 0) "usd_naar_eur"}}
-  {{ range last 1 $rates }}
+  {{ range first 1 $rates }}
     {{ lang.FormatNumberCustom 4 .usd_naar_eur "- ." }}
   {{ end }}
 {{ else if eq (.Get 0) "bank"}}
-  {{ range last 1 $rates }}
+  {{ range first 1 $rates }}
      {{ .bank }}
   {{ end }}
 {{ else if eq (.Get 0) "datum"}}
-  {{ range last 1 $rates }}
+  {{ range first 1 $rates }}
     {{ .datum }}
   {{ end }}
 {{ else if eq (.Get 0) "tijd"}}
-  {{ range last 1 $rates }}
+  {{ range first 1 $rates }}
      {{ .tijd }}
   {{ end }}
 {{ else if eq (.Get 0) "datum_website"}}
-  {{ range last 1 $rates }}
+  {{ range first 1 $rates }}
      {{ .datum_website }}
   {{ end }}
 {{ else if eq (.Get 0) "status"}}
-  {{ range last 1 $rates }}
+  {{ range first 1 $rates }}
     {{ if eq .datum ( now.Format "2006.01.02" ) }}
       <span style="font-size:9px;">🟢</span>
     {{ else }}
