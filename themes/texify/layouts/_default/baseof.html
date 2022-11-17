@@ -31,6 +31,15 @@
   <!-- fontawesome script -->
   <script src="https://kit.fontawesome.com/381ac6a2f8.js" crossorigin="anonymous"></script>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L48P3VC17M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-L48P3VC17M');
+  </script>
   <!-- math -->
   {{ if cond (ne .Params.math nil) .Params.math .Site.Params.math.enable }}
   {{ partial "math.html" . }}
@@ -87,18 +96,7 @@
   {{ end }}
 
   <!-- google analytics -->
-  {{ template "_internal/google_analytics.html" . }}
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-L48P3VC17M"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-L48P3VC17M');
-  </script> -->
-
+  <!-- {{ template "_internal/google_analytics_async.html" . }} -->
 
 </body>
 
