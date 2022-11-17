@@ -76,6 +76,9 @@
 
   {{ block "head" . }}{{ end }}
 
+  <!-- google analytics -->
+  <!-- {{ template "_internal/google_analytics_async.html" . }} -->
+
 </head>
 
 <body>
@@ -94,9 +97,6 @@
   {{ range .Site.Params.customJS }}
   <script src="{{ . | absURL }}"></script>
   {{ end }}
-
-  <!-- google analytics -->
-  <!-- {{ template "_internal/google_analytics_async.html" . }} -->
 
 </body>
 
