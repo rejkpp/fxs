@@ -53,7 +53,7 @@ giraal|eur → usd|usd → eur
 dsb |{{< dsb eur_naar_usd>}}|{{< dsb usd_naar_eur>}}|{{< dsb status>}}
 fina |{{< fina eur_naar_usd>}}|{{< fina usd_naar_eur>}}|{{< fina status>}}
 hakrin |{{< hakrin eur_naar_usd>}}|{{< hakrin usd_naar_eur>}}|{{< hakrin status>}}
-republic  |—|—
+republic  |{{< republic eur_naar_usd>}}|{{< republic usd_naar_eur>}}|{{< republic status>}}
 godo |{{< godo eur_naar_usd>}}|{{< godo usd_naar_eur>}}|{{< godo status>}}
 vcb |{{< vcb eur_naar_usd>}}|{{< vcb usd_naar_eur>}}|{{< vcb status>}}
 
