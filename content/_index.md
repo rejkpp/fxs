@@ -13,8 +13,8 @@ author = "forexsu.co"
 &nbsp;contant|$ aankoop|$ verkoop
 :-----:|:-----:|:-----:|:-----:
 cbvs |{{< cbvs-cash usd_aankoop>}}|{{< cbvs-cash usd_verkoop>}}|{{< cbvs-cash status>}}
-<!-- cme |{{< cme usd_aankoop>}}|{{< cme usd_verkoop>}}|{{< cme status>}}
-fxs |{{< fxs usd_aankoop>}}|{{< fxs usd_verkoop>}}|{{< fxs status>}} -->
+cme |{{< cme usd_aankoop>}}|{{< cme usd_verkoop>}}|{{< cme status>}}
+fxs |{{< fxs usd_aankoop>}}|{{< fxs usd_verkoop>}}|{{< fxs status>}}
 ##
 giraal|$ aankoop|$ verkoop
 :-----:|:-----:|:-----:|:-----:
@@ -32,8 +32,8 @@ vcb |{{< vcb usd_aankoop>}}|{{< vcb usd_verkoop>}}|{{< vcb status>}}
 &nbsp;contant|€ aankoop|€ verkoop
 :-----:|:-----:|:-----:|:-----:
 cbvs |{{< cbvs-cash eur_aankoop>}}|{{< cbvs-cash eur_verkoop>}}|{{< cbvs-cash status>}}
-<!-- cme |{{< cme eur_aankoop>}}|{{< cme eur_verkoop>}}|{{< cme status>}}
-fxs |{{< fxs eur_aankoop>}}|{{< fxs eur_verkoop>}}|{{< fxs status>}} -->
+cme |{{< cme eur_aankoop>}}|{{< cme eur_verkoop>}}|{{< cme status>}}
+fxs |{{< fxs eur_aankoop>}}|{{< fxs eur_verkoop>}}|{{< fxs status>}}
 ##
 giraal|€ aankoop|€ verkoop
 :-----:|:-----:|:-----:|:-----:
@@ -48,6 +48,11 @@ vcb |{{< vcb eur_aankoop>}}|{{< vcb eur_verkoop>}}|{{< vcb status>}}
 
 ###### ———————————————————————————————————
 ###### 💶💵 eur-usd koersen
+&nbsp;contant|eur → usd|usd → eur
+:-----:|:-----:|:-----:|:-----:
+cme |{{< cme eur_naar_usd>}}|{{< cme usd_naar_eur>}}|{{< cme status>}}
+fxs |{{< fxs eur_naar_usd>}}|{{< fxs usd_naar_eur>}}|{{< fxs status>}}
+##
 giraal|eur → usd|usd → eur
 :-----:|:-----:|:-----:|:-----:
 dsb |{{< dsb eur_naar_usd>}}|{{< dsb usd_naar_eur>}}|{{< dsb status>}}
@@ -56,9 +61,4 @@ hakrin |{{< hakrin eur_naar_usd>}}|{{< hakrin usd_naar_eur>}}|{{< hakrin status>
 republic  |{{< republic eur_naar_usd>}}|{{< republic usd_naar_eur>}}|{{< republic status>}}
 godo |{{< godo eur_naar_usd>}}|{{< godo usd_naar_eur>}}|{{< godo status>}}
 vcb |{{< vcb eur_naar_usd>}}|{{< vcb usd_naar_eur>}}|{{< vcb status>}}
-
-<!-- &nbsp;contant|eur → usd|usd → eur
-:-----:|:-----:|:-----:|:-----:
-cme |{{< cme eur_naar_usd>}}|{{< cme usd_naar_eur>}}|{{< cme status>}}
-fxs |{{< fxs eur_naar_usd>}}|{{< fxs usd_naar_eur>}}|{{< fxs status>}} -->
 ###### ———————————————————————————————————
