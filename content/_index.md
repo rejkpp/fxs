@@ -3,7 +3,7 @@ author = "forexsu.co"
 +++
 ###### ———————————————————————————————————
 
-###### de koersen worden elke 30 min. geupdate tussen 08:00 en 18:00.
+###### de koersen worden elk uur geupdate tussen 08:00 en 18:00.
 ###### onze telegram channel met de actuele koersen:
 ###### https://t.me/+uaicKQdCYDcwMDE0
 
