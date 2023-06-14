@@ -17,12 +17,14 @@
 
   <!-- page: "rates" -->
   {{ else if eq .Title "rates"}}
-    {{ partial "datecheck.html" .}}
+    {{ partial "datelegend.html" .}}
     <article class="content center">
       {{ .Content }}
-
+      
+      <!-- <br>
       <h5>wisselen via whatsapp</h5>
-      {{ partial "whatsapp.html" .}}
+      {{ partial "whatsapp.html" .}} -->
+      
     </article>
 
   <!-- page: "demo" -->

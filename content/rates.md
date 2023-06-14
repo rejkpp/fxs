@@ -1,13 +1,17 @@
 +++
 author = "forexsu.co"
-date = 2022-07-19T03:00:00Z
-time = "16:30"
 title = "rates"
 
 +++
 
 fxs| &nbsp;aankoop&nbsp;| &nbsp;verkoop&nbsp;
-:-----:|:-----:|:-----:
-|  usd  | {{< cme usd_aankoop>}} | {{< cme usd_verkoop>}} |
-| eur | {{< cme eur_aankoop>}} | {{< cme eur_verkoop>}} |
-&nbsp;eur/usd|{{< cme eur_naar_usd>}} | {{< cme usd_naar_eur>}} |
+:-----:|:-----:|:-----:|:-----:
+|  usd  | {{< fxs usd_aankoop>}}|{{< fxs usd_verkoop>}}|{{< fxs status>}}
+| eur | {{< fxs eur_aankoop>}}|{{< fxs eur_verkoop>}}|{{< fxs status>}}
+&nbsp;eur/usd|{{< fxs eur_naar_usd>}}|{{< fxs usd_naar_eur>}}|{{< fxs status>}}
+
+
+
+———————————————————————————————————
+
+<h6 style="color:grey; font-style:italic">wijzigingen voorbehouden</h6>
