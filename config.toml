@@ -23,6 +23,10 @@ ignoreErrors = ["error-remote-getjson"]
 email = "hello@forexsu.co" # your email
 name = "forexsu"          # your name
 
+[caches]
+  [caches.getjson]
+    maxAge = 0
+
 # https://gohugo.io/getting-started/configuration-markup
 [markup]
 defaultMarkdownHandler = "goldmark"
