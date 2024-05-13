@@ -7,12 +7,14 @@
   {{ partial "datelegend.html" .}}
   <article class="content center">
     {{ .Content }}
-    <h6>
+
+    <!--     <h6>
       <a href="/crypto">crypto kopen</a>
     </h6>
     {{ range first 1 (where .Site.RegularPages "Type" "==" "crypto") }}
       {{ .Content }}
-    {{ end }}
+    {{ end }} -->
+    
   </article>
   <!-- {{ $paginator := .Paginate (where .Site.RegularPages "Type" "==" "koers") }}
   {{ range first 1 $paginator.Pages }}
