@@ -18,6 +18,7 @@ theme = "texify"        # theme directory name
 title = "foreign exchange suriname"       # website title
 timeZone = "America/Paramaribo"
 ignoreErrors = ["error-remote-getjson"]
+timeout = 120000  # Timeout in milliseconds (120 seconds)
 
 [author]
 email = "hello@forexsu.co" # your email
