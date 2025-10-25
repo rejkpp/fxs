@@ -1,7 +1,12 @@
 {{ $json := resources.GetRemote "http://137.184.146.224:3000/data/cbvs-cash.json" }}
 {{ $rates := slice }}
-{{ if and $json $json.Content }}
-  {{ $rates = transform.Unmarshal $json.Content }}
+{{ if $json }}
+  {{ with $json.Content }}
+    {{ $content := . | string }}
+    {{ if and (gt (len $content) 10) (hasPrefix $content "[") (hasSuffix $content "]") }}
+      {{ $rates = transform.Unmarshal $content }}
+    {{ end }}
+  {{ end }}
 {{ end }}
 
 {{ if $rates }}
