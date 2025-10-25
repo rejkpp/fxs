@@ -1,4 +1,5 @@
-{{ $rates := getJSON "http://137.184.146.224:3000/data/republic.json" }}
+{{ $json := resources.GetRemote "http://137.184.146.224:3000/data/republic.json" }}
+{{ $rates := transform.Unmarshal $json.Content }}
 
 {{ if eq (.Get 0) "usd_aankoop"}}
   {{ range first 1 $rates }}
