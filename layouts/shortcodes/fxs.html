@@ -1,6 +1,6 @@
 {{ $json := resources.GetRemote "http://137.184.146.224:3000/data/fxs.json" }}
 {{ $rates := slice }}
-{{ if $json }}
+{{ if and $json $json.Content }}
   {{ $rates = transform.Unmarshal $json.Content }}
 {{ end }}
 
